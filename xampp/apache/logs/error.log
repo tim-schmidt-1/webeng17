@@ -1,0 +1,448 @@
+[Wed Feb 22 14:49:37.003149 2017] [ssl:warn] [pid 6344:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 14:49:37.386630 2017] [ssl:warn] [pid 6344:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 14:49:37.505663 2017] [mpm_winnt:notice] [pid 6344:tid 580] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Feb 22 14:49:37.505663 2017] [mpm_winnt:notice] [pid 6344:tid 580] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Feb 22 14:49:37.505663 2017] [core:notice] [pid 6344:tid 580] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Feb 22 14:49:37.518662 2017] [mpm_winnt:notice] [pid 6344:tid 580] AH00418: Parent: Created child process 5824
+[Wed Feb 22 14:49:39.316307 2017] [ssl:warn] [pid 5824:tid 236] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 14:49:39.641594 2017] [ssl:warn] [pid 5824:tid 236] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 14:49:39.739130 2017] [mpm_winnt:notice] [pid 5824:tid 236] AH00354: Child: Starting 150 worker threads.
+[Wed Feb 22 14:50:51.329144 2017] [ssl:warn] [pid 6376:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 14:50:51.655173 2017] [ssl:warn] [pid 6376:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 14:50:51.754339 2017] [mpm_winnt:notice] [pid 6376:tid 580] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Feb 22 14:50:51.754339 2017] [mpm_winnt:notice] [pid 6376:tid 580] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Feb 22 14:50:51.754339 2017] [core:notice] [pid 6376:tid 580] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Feb 22 14:50:51.759344 2017] [mpm_winnt:notice] [pid 6376:tid 580] AH00418: Parent: Created child process 8340
+[Wed Feb 22 14:50:53.546746 2017] [ssl:warn] [pid 8340:tid 600] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 14:50:53.876282 2017] [ssl:warn] [pid 8340:tid 600] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 14:50:53.970937 2017] [mpm_winnt:notice] [pid 8340:tid 600] AH00354: Child: Starting 150 worker threads.
+[Wed Feb 22 15:23:03.179029 2017] [ssl:warn] [pid 4452:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 15:23:03.288081 2017] [core:warn] [pid 4452:tid 580] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Feb 22 15:23:03.493165 2017] [ssl:warn] [pid 4452:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 15:23:03.583216 2017] [mpm_winnt:notice] [pid 4452:tid 580] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Feb 22 15:23:03.583216 2017] [mpm_winnt:notice] [pid 4452:tid 580] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Feb 22 15:23:03.583216 2017] [core:notice] [pid 4452:tid 580] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Feb 22 15:23:03.588211 2017] [mpm_winnt:notice] [pid 4452:tid 580] AH00418: Parent: Created child process 4812
+[Wed Feb 22 15:23:05.250054 2017] [ssl:warn] [pid 4812:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 15:23:05.557197 2017] [ssl:warn] [pid 4812:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 15:23:05.647239 2017] [mpm_winnt:notice] [pid 4812:tid 568] AH00354: Child: Starting 150 worker threads.
+[Wed Feb 22 16:07:22.072886 2017] [:error] [pid 4812:tid 1880] [client ::1:59784] PHP Notice:  Undefined variable: _Post in C:\\xampp\\htdocs\\index.php on line 2
+[Wed Feb 22 16:08:56.983643 2017] [:error] [pid 4812:tid 1880] [client ::1:59785] PHP Notice:  Undefined variable: _Post in C:\\xampp\\htdocs\\index.php on line 2
+[Wed Feb 22 16:09:18.195580 2017] [:error] [pid 4812:tid 1880] [client ::1:59786] PHP Notice:  Undefined variable: _Post in C:\\xampp\\htdocs\\index.php on line 2, referer: http://localhost/
+[Wed Feb 22 16:11:38.579434 2017] [:error] [pid 4812:tid 1880] [client ::1:59789] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 2
+[Wed Feb 22 16:11:46.629558 2017] [:error] [pid 4812:tid 1880] [client ::1:59790] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 2, referer: http://localhost/index.php
+[Wed Feb 22 16:11:48.109210 2017] [:error] [pid 4812:tid 1880] [client ::1:59790] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 2, referer: http://localhost/index.php
+[Wed Feb 22 16:11:49.170616 2017] [:error] [pid 4812:tid 1880] [client ::1:59790] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 2, referer: http://localhost/index.php
+[Wed Feb 22 16:12:38.973974 2017] [:error] [pid 4812:tid 1880] [client ::1:59793] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 2
+[Wed Feb 22 16:12:47.109838 2017] [:error] [pid 4812:tid 1880] [client ::1:59794] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 2, referer: http://localhost/
+[Wed Feb 22 16:12:48.324704 2017] [:error] [pid 4812:tid 1880] [client ::1:59794] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 2, referer: http://localhost/index.php
+[Wed Feb 22 16:12:48.702885 2017] [:error] [pid 4812:tid 1880] [client ::1:59794] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 2, referer: http://localhost/index.php
+[Wed Feb 22 16:30:08.756284 2017] [ssl:warn] [pid 2572:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 16:30:08.899837 2017] [core:warn] [pid 2572:tid 580] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Feb 22 16:30:09.122054 2017] [ssl:warn] [pid 2572:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 16:30:09.824346 2017] [mpm_winnt:notice] [pid 2572:tid 580] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Feb 22 16:30:09.825352 2017] [mpm_winnt:notice] [pid 2572:tid 580] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Feb 22 16:30:09.825352 2017] [core:notice] [pid 2572:tid 580] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Feb 22 16:30:09.830347 2017] [mpm_winnt:notice] [pid 2572:tid 580] AH00418: Parent: Created child process 7704
+[Wed Feb 22 16:30:11.642176 2017] [ssl:warn] [pid 7704:tid 616] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 16:30:11.949176 2017] [ssl:warn] [pid 7704:tid 616] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 16:30:12.042328 2017] [mpm_winnt:notice] [pid 7704:tid 616] AH00354: Child: Starting 150 worker threads.
+[Wed Feb 22 16:44:32.437494 2017] [ssl:warn] [pid 5580:tid 560] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 16:44:32.541241 2017] [core:warn] [pid 5580:tid 560] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Feb 22 16:44:32.719660 2017] [ssl:warn] [pid 5580:tid 560] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 16:44:33.424338 2017] [mpm_winnt:notice] [pid 5580:tid 560] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Feb 22 16:44:33.424338 2017] [mpm_winnt:notice] [pid 5580:tid 560] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Feb 22 16:44:33.424338 2017] [core:notice] [pid 5580:tid 560] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Feb 22 16:44:33.438552 2017] [mpm_winnt:notice] [pid 5580:tid 560] AH00418: Parent: Created child process 3068
+[Wed Feb 22 16:44:35.145832 2017] [ssl:warn] [pid 3068:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 16:44:35.460396 2017] [ssl:warn] [pid 3068:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Feb 22 16:44:35.575288 2017] [mpm_winnt:notice] [pid 3068:tid 564] AH00354: Child: Starting 150 worker threads.
+[Wed Feb 22 16:46:03.307248 2017] [:error] [pid 3068:tid 1896] [client ::1:52116] PHP Warning:  Illegal string offset 'name' in C:\\xampp\\htdocs\\index.php on line 3, referer: http://localhost/
+[Wed Feb 22 16:46:09.345621 2017] [:error] [pid 3068:tid 1896] [client ::1:65515] PHP Warning:  Illegal string offset 'name' in C:\\xampp\\htdocs\\index.php on line 3, referer: http://localhost/index.php
+[Wed Feb 22 16:46:10.477089 2017] [:error] [pid 3068:tid 1896] [client ::1:65515] PHP Warning:  Illegal string offset 'name' in C:\\xampp\\htdocs\\index.php on line 3, referer: http://localhost/index.php
+[Wed Feb 22 16:46:10.492827 2017] [:error] [pid 3068:tid 1896] [client ::1:65515] PHP Notice:  Uninitialized string offset: 0 in C:\\xampp\\htdocs\\index.php on line 3, referer: http://localhost/index.php
+[Wed Feb 22 16:50:34.948641 2017] [:error] [pid 3068:tid 1896] [client ::1:59731] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 5
+[Wed Feb 22 16:50:34.948641 2017] [:error] [pid 3068:tid 1896] [client ::1:59731] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 6
+[Wed Feb 22 16:50:37.744280 2017] [:error] [pid 3068:tid 1896] [client ::1:59731] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 5
+[Wed Feb 22 16:50:37.744280 2017] [:error] [pid 3068:tid 1896] [client ::1:59731] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 6
+[Wed Feb 22 16:51:21.459322 2017] [:error] [pid 3068:tid 1896] [client ::1:59732] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 4
+[Wed Feb 22 16:51:47.891433 2017] [:error] [pid 3068:tid 1896] [client ::1:59733] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Wed Feb 22 16:51:57.407044 2017] [:error] [pid 3068:tid 1896] [client ::1:59734] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Wed Feb 22 16:51:58.377517 2017] [:error] [pid 3068:tid 1896] [client ::1:59734] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 13:43:36.076446 2017] [ssl:warn] [pid 7212:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Feb 23 13:43:36.192354 2017] [core:warn] [pid 7212:tid 568] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Feb 23 13:43:36.398170 2017] [ssl:warn] [pid 7212:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Feb 23 13:43:37.140881 2017] [mpm_winnt:notice] [pid 7212:tid 568] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Thu Feb 23 13:43:37.140881 2017] [mpm_winnt:notice] [pid 7212:tid 568] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Thu Feb 23 13:43:37.140881 2017] [core:notice] [pid 7212:tid 568] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Thu Feb 23 13:43:37.140881 2017] [mpm_winnt:notice] [pid 7212:tid 568] AH00418: Parent: Created child process 6120
+[Thu Feb 23 13:43:38.928315 2017] [ssl:warn] [pid 6120:tid 604] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Feb 23 13:43:39.276055 2017] [ssl:warn] [pid 6120:tid 604] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Feb 23 13:43:39.391975 2017] [mpm_winnt:notice] [pid 6120:tid 604] AH00354: Child: Starting 150 worker threads.
+[Thu Feb 23 13:43:45.297027 2017] [:error] [pid 6120:tid 1908] [client ::1:62359] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 13:55:35.682536 2017] [:error] [pid 6120:tid 1908] [client ::1:61807] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 13:56:03.077698 2017] [:error] [pid 6120:tid 1908] [client ::1:61808] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 13:56:43.008004 2017] [:error] [pid 6120:tid 1908] [client ::1:61809] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 13:56:45.041113 2017] [:error] [pid 6120:tid 1908] [client ::1:61809] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 13:59:30.006595 2017] [:error] [pid 6120:tid 1908] [client ::1:61816] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 14:05:05.391862 2017] [:error] [pid 6120:tid 1908] [client ::1:61834] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:05:12.343487 2017] [:error] [pid 6120:tid 1908] [client ::1:61835] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:06:09.887899 2017] [:error] [pid 6120:tid 1908] [client ::1:61836] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:06:16.022248 2017] [:error] [pid 6120:tid 1908] [client ::1:61837] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:06:34.170328 2017] [:error] [pid 6120:tid 1908] [client ::1:61838] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:07:44.924271 2017] [:error] [pid 6120:tid 1908] [client ::1:61843] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:07:44.924271 2017] [:error] [pid 6120:tid 1908] [client ::1:61843] PHP Fatal error:  Call to undefined function file_append() in C:\\xampp\\htdocs\\index.php on line 8, referer: http://localhost/index.php
+[Thu Feb 23 14:09:31.281470 2017] [:error] [pid 6120:tid 1908] [client ::1:61871] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:09:31.281470 2017] [:error] [pid 6120:tid 1908] [client ::1:61871] PHP Notice:  Use of undefined constant File_APPEND - assumed 'File_APPEND' in C:\\xampp\\htdocs\\index.php on line 8, referer: http://localhost/index.php
+[Thu Feb 23 14:09:31.281470 2017] [:error] [pid 6120:tid 1908] [client ::1:61871] PHP Warning:  file_put_contents() expects parameter 3 to be long, string given in C:\\xampp\\htdocs\\index.php on line 8, referer: http://localhost/index.php
+[Thu Feb 23 14:10:03.549114 2017] [:error] [pid 6120:tid 1908] [client ::1:61873] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:10:13.976359 2017] [:error] [pid 6120:tid 1908] [client ::1:61874] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:10:27.993794 2017] [:error] [pid 6120:tid 1908] [client ::1:61875] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:12:22.395162 2017] [:error] [pid 6120:tid 1908] [client ::1:61879] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:12:29.524512 2017] [:error] [pid 6120:tid 1908] [client ::1:61880] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:13:42.040310 2017] [:error] [pid 6120:tid 1908] [client ::1:61881] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:13:49.027364 2017] [:error] [pid 6120:tid 1908] [client ::1:61882] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:14:12.805003 2017] [:error] [pid 6120:tid 1908] [client ::1:61883] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:14:19.290274 2017] [:error] [pid 6120:tid 1908] [client ::1:61884] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:14:29.703194 2017] [:error] [pid 6120:tid 1908] [client ::1:61885] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:15:31.265008 2017] [:error] [pid 6120:tid 1908] [client ::1:61886] PHP Parse error:  syntax error, unexpected '$current' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 9, referer: http://localhost/index.php
+[Thu Feb 23 14:16:40.235060 2017] [:error] [pid 6120:tid 1908] [client ::1:61937] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:16:47.650991 2017] [:error] [pid 6120:tid 1908] [client ::1:61938] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:17:23.537582 2017] [:error] [pid 6120:tid 1908] [client ::1:61939] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:18:25.661058 2017] [:error] [pid 6120:tid 1908] [client ::1:61956] PHP Parse error:  syntax error, unexpected 'file_put_contents' (T_STRING) in C:\\xampp\\htdocs\\index.php on line 11, referer: http://localhost/index.php
+[Thu Feb 23 14:18:32.402497 2017] [:error] [pid 6120:tid 1908] [client ::1:61957] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:18:40.591416 2017] [:error] [pid 6120:tid 1908] [client ::1:61958] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:18:50.337422 2017] [:error] [pid 6120:tid 1908] [client ::1:61959] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:19:28.104625 2017] [:error] [pid 6120:tid 1908] [client ::1:61960] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:19:36.984196 2017] [:error] [pid 6120:tid 1908] [client ::1:61961] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:20:02.220557 2017] [:error] [pid 6120:tid 1908] [client ::1:61962] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:21:04.911148 2017] [:error] [pid 6120:tid 1908] [client ::1:61963] PHP Parse error:  syntax error, unexpected '/' in C:\\xampp\\htdocs\\index.php on line 12, referer: http://localhost/index.php
+[Thu Feb 23 14:21:26.566726 2017] [:error] [pid 6120:tid 1908] [client ::1:61964] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:21:39.521564 2017] [:error] [pid 6120:tid 1908] [client ::1:61965] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:21:59.379418 2017] [:error] [pid 6120:tid 1908] [client ::1:61966] PHP Parse error:  syntax error, unexpected '/' in C:\\xampp\\htdocs\\index.php on line 12, referer: http://localhost/index.php
+[Thu Feb 23 14:22:52.892519 2017] [:error] [pid 6120:tid 1908] [client ::1:61969] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:22:58.009227 2017] [:error] [pid 6120:tid 1908] [client ::1:61970] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:26:19.498633 2017] [:error] [pid 6120:tid 1908] [client ::1:62019] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:26:19.499638 2017] [:error] [pid 6120:tid 1908] [client ::1:62019] PHP Warning:  fwrite() expects parameter 1 to be resource, string given in C:\\xampp\\htdocs\\index.php on line 12, referer: http://localhost/index.php
+[Thu Feb 23 14:26:40.739413 2017] [:error] [pid 6120:tid 1908] [client ::1:62020] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:26:40.739413 2017] [:error] [pid 6120:tid 1908] [client ::1:62020] PHP Warning:  fwrite() expects parameter 1 to be resource, string given in C:\\xampp\\htdocs\\index.php on line 12, referer: http://localhost/index.php
+[Thu Feb 23 14:26:50.461418 2017] [:error] [pid 6120:tid 1908] [client ::1:62021] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:26:50.461418 2017] [:error] [pid 6120:tid 1908] [client ::1:62021] PHP Warning:  fwrite() expects parameter 1 to be resource, string given in C:\\xampp\\htdocs\\index.php on line 12, referer: http://localhost/index.php
+[Thu Feb 23 14:28:23.892166 2017] [:error] [pid 6120:tid 1908] [client ::1:62029] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:28:30.726056 2017] [:error] [pid 6120:tid 1908] [client ::1:62030] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:28:50.589403 2017] [:error] [pid 6120:tid 1908] [client ::1:62031] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:29:46.087925 2017] [:error] [pid 6120:tid 1908] [client ::1:62033] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:29:57.678448 2017] [:error] [pid 6120:tid 1908] [client ::1:62034] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:31:49.229836 2017] [:error] [pid 6120:tid 1908] [client ::1:62043] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:32:01.745808 2017] [:error] [pid 6120:tid 1908] [client ::1:62044] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:52:07.342068 2017] [:error] [pid 6120:tid 1908] [client ::1:62110] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:52:29.992704 2017] [:error] [pid 6120:tid 1908] [client ::1:62111] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 7, referer: http://localhost/index.php
+[Thu Feb 23 14:53:20.852750 2017] [:error] [pid 6120:tid 1908] [client ::1:62112] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 7
+[Thu Feb 23 14:53:23.143270 2017] [:error] [pid 6120:tid 1908] [client ::1:62112] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 7
+[Thu Feb 23 14:53:58.093666 2017] [:error] [pid 6120:tid 1908] [client ::1:62113] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 7
+[Thu Feb 23 14:53:59.154203 2017] [:error] [pid 6120:tid 1908] [client ::1:62113] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 7
+[Thu Feb 23 14:54:00.046767 2017] [:error] [pid 6120:tid 1908] [client ::1:62113] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 7
+[Thu Feb 23 14:54:01.679552 2017] [:error] [pid 6120:tid 1908] [client ::1:62113] PHP Parse error:  syntax error, unexpected '$file' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 7
+[Thu Feb 23 14:54:13.198793 2017] [:error] [pid 6120:tid 1908] [client ::1:62114] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 14:54:13.198793 2017] [:error] [pid 6120:tid 1908] [client ::1:62114] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 4
+[Thu Feb 23 14:54:13.198793 2017] [:error] [pid 6120:tid 1908] [client ::1:62114] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 8
+[Thu Feb 23 14:54:56.909907 2017] [:error] [pid 6120:tid 1908] [client ::1:62115] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 14:54:56.910406 2017] [:error] [pid 6120:tid 1908] [client ::1:62115] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 4
+[Thu Feb 23 14:54:56.910906 2017] [:error] [pid 6120:tid 1908] [client ::1:62115] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 8
+[Thu Feb 23 14:58:00.219924 2017] [:error] [pid 6120:tid 1908] [client ::1:62116] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 14:58:00.219924 2017] [:error] [pid 6120:tid 1908] [client ::1:62116] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 4
+[Thu Feb 23 14:58:00.219924 2017] [:error] [pid 6120:tid 1908] [client ::1:62116] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 8
+[Thu Feb 23 14:58:24.073312 2017] [:error] [pid 6120:tid 1908] [client ::1:62118] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 14:58:24.073312 2017] [:error] [pid 6120:tid 1908] [client ::1:62118] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 4
+[Thu Feb 23 14:58:24.073312 2017] [:error] [pid 6120:tid 1908] [client ::1:62118] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 8
+[Thu Feb 23 14:59:04.896431 2017] [:error] [pid 6120:tid 1908] [client ::1:62120] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 14:59:04.896431 2017] [:error] [pid 6120:tid 1908] [client ::1:62120] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 4
+[Thu Feb 23 14:59:04.896431 2017] [:error] [pid 6120:tid 1908] [client ::1:62120] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 8
+[Thu Feb 23 14:59:06.066464 2017] [:error] [pid 6120:tid 1908] [client ::1:62120] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 14:59:06.066464 2017] [:error] [pid 6120:tid 1908] [client ::1:62120] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 4
+[Thu Feb 23 14:59:06.066464 2017] [:error] [pid 6120:tid 1908] [client ::1:62120] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 8
+[Thu Feb 23 14:59:31.860538 2017] [:error] [pid 6120:tid 1908] [client ::1:62121] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 14:59:31.860538 2017] [:error] [pid 6120:tid 1908] [client ::1:62121] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 4
+[Thu Feb 23 14:59:31.860538 2017] [:error] [pid 6120:tid 1908] [client ::1:62121] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 8
+[Thu Feb 23 15:00:46.091007 2017] [:error] [pid 6120:tid 1908] [client ::1:62122] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 3
+[Thu Feb 23 15:00:46.091007 2017] [:error] [pid 6120:tid 1908] [client ::1:62122] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 4
+[Thu Feb 23 15:00:46.106637 2017] [:error] [pid 6120:tid 1908] [client ::1:62122] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 8
+[Thu Feb 23 15:05:00.049693 2017] [:error] [pid 6120:tid 1908] [client ::1:62127] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 9, referer: http://localhost/index.php
+[Thu Feb 23 15:05:00.049693 2017] [:error] [pid 6120:tid 1908] [client ::1:62127] PHP Notice:  Undefined index: getre in C:\\xampp\\htdocs\\index.php on line 13, referer: http://localhost/index.php
+[Thu Feb 23 15:06:18.606526 2017] [:error] [pid 6120:tid 1908] [client ::1:62129] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 9, referer: http://localhost/index.php
+[Thu Feb 23 15:06:45.722170 2017] [:error] [pid 6120:tid 1908] [client ::1:62130] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 9, referer: http://localhost/index.php
+[Thu Feb 23 15:06:48.040960 2017] [:error] [pid 6120:tid 1908] [client ::1:62130] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 9, referer: http://localhost/index.php
+[Thu Feb 23 15:07:02.756290 2017] [:error] [pid 6120:tid 1908] [client ::1:62131] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 9, referer: http://localhost/index.php
+[Thu Feb 23 15:07:43.916317 2017] [:error] [pid 6120:tid 1908] [client ::1:62132] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:07:54.439982 2017] [:error] [pid 6120:tid 1908] [client ::1:62133] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:08:02.085159 2017] [:error] [pid 6120:tid 1908] [client ::1:62134] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:08:06.341491 2017] [:error] [pid 6120:tid 1908] [client ::1:62134] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:08:53.958815 2017] [:error] [pid 6120:tid 1908] [client ::1:62135] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:08:56.541296 2017] [:error] [pid 6120:tid 1908] [client ::1:62135] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:09:13.923868 2017] [:error] [pid 6120:tid 1908] [client ::1:62137] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/
+[Thu Feb 23 15:09:41.562405 2017] [:error] [pid 6120:tid 1908] [client ::1:62138] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:09:43.107479 2017] [:error] [pid 6120:tid 1908] [client ::1:62138] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:09:44.067825 2017] [:error] [pid 6120:tid 1908] [client ::1:62138] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:09:48.455112 2017] [:error] [pid 6120:tid 1908] [client ::1:62138] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:10:17.385257 2017] [:error] [pid 6120:tid 1908] [client ::1:62140] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:11:06.664521 2017] [:error] [pid 6120:tid 1908] [client ::1:62152] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:12:17.188036 2017] [:error] [pid 6120:tid 1908] [client ::1:62153] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:13:07.436098 2017] [:error] [pid 6120:tid 1908] [client ::1:62156] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:13:24.581916 2017] [:error] [pid 6120:tid 1908] [client ::1:62157] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:13:28.720927 2017] [:error] [pid 6120:tid 1908] [client ::1:62157] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:13:32.333211 2017] [:error] [pid 6120:tid 1908] [client ::1:62157] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:13:35.049777 2017] [:error] [pid 6120:tid 1908] [client ::1:62157] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/index.php
+[Thu Feb 23 15:13:39.384926 2017] [:error] [pid 6120:tid 1908] [client ::1:62157] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 5
+[Thu Feb 23 15:13:39.384926 2017] [:error] [pid 6120:tid 1908] [client ::1:62157] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 6
+[Thu Feb 23 15:13:39.384926 2017] [:error] [pid 6120:tid 1908] [client ::1:62157] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10
+[Thu Feb 23 15:13:51.408864 2017] [:error] [pid 6120:tid 1908] [client ::1:62158] PHP Notice:  Undefined variable: current in C:\\xampp\\htdocs\\index.php on line 10, referer: http://localhost/
+[Thu Feb 23 15:14:20.830701 2017] [:error] [pid 6120:tid 1908] [client ::1:62159] PHP Notice:  Undefined index: name in C:\\xampp\\htdocs\\index.php on line 5
+[Thu Feb 23 15:14:20.830701 2017] [:error] [pid 6120:tid 1908] [client ::1:62159] PHP Notice:  Undefined index: pw in C:\\xampp\\htdocs\\index.php on line 6
+[Thu Feb 23 15:20:12.530548 2017] [:error] [pid 6120:tid 1908] [client ::1:62179] PHP Parse error:  syntax error, unexpected end of file in C:\\xampp\\htdocs\\index.php on line 46, referer: http://localhost/index.php
+[Thu Feb 23 15:22:33.833646 2017] [:error] [pid 6120:tid 1908] [client ::1:62185] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in C:\\xampp\\htdocs\\index.php on line 18
+[Thu Feb 23 15:54:37.498465 2017] [:error] [pid 6120:tid 556] [client ::1:51471] PHP Notice:  Use of undefined constant get_class_methods - assumed 'get_class_methods' in C:\\xampp\\htdocs\\index.php on line 19, referer: http://localhost/
+[Thu Feb 23 15:54:47.164320 2017] [:error] [pid 6120:tid 556] [client ::1:51472] PHP Notice:  Use of undefined constant get_class_methods - assumed 'get_class_methods' in C:\\xampp\\htdocs\\index.php on line 19, referer: http://localhost/
+[Thu Feb 23 15:54:59.741890 2017] [:error] [pid 6120:tid 556] [client ::1:51473] PHP Warning:  get_class_methods() expects exactly 1 parameter, 0 given in C:\\xampp\\htdocs\\index.php on line 19, referer: http://localhost/
+[Thu Feb 23 16:04:03.041903 2017] [:error] [pid 6120:tid 556] [client ::1:51522] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 26, referer: http://localhost/index.php
+[Thu Feb 23 16:04:07.380610 2017] [:error] [pid 6120:tid 556] [client ::1:51522] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 26
+[Thu Feb 23 16:04:10.328153 2017] [:error] [pid 6120:tid 556] [client ::1:51522] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 26
+[Thu Feb 23 16:04:21.322687 2017] [:error] [pid 6120:tid 556] [client ::1:51523] PHP Warning:  strpos(): Empty needle in C:\\xampp\\htdocs\\index.php on line 24, referer: http://localhost/
+[Sun Mar 26 00:42:19.939171 2017] [ssl:warn] [pid 4600:tid 188] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 26 00:42:20.290491 2017] [core:warn] [pid 4600:tid 188] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 26 00:42:21.310754 2017] [ssl:warn] [pid 4600:tid 188] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 26 00:42:23.493918 2017] [mpm_winnt:notice] [pid 4600:tid 188] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Sun Mar 26 00:42:23.493918 2017] [mpm_winnt:notice] [pid 4600:tid 188] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sun Mar 26 00:42:23.493918 2017] [core:notice] [pid 4600:tid 188] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sun Mar 26 00:42:23.493918 2017] [mpm_winnt:notice] [pid 4600:tid 188] AH00418: Parent: Created child process 5996
+[Sun Mar 26 00:42:29.297911 2017] [ssl:warn] [pid 5996:tid 644] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 26 00:42:29.677192 2017] [ssl:warn] [pid 5996:tid 644] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 26 00:42:29.777512 2017] [mpm_winnt:notice] [pid 5996:tid 644] AH00354: Child: Starting 150 worker threads.
+[Sun Mar 26 11:18:40.811160 2017] [ssl:warn] [pid 9852:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 26 11:18:41.712834 2017] [core:warn] [pid 9852:tid 572] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 26 11:18:42.414446 2017] [ssl:warn] [pid 9852:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 26 11:18:43.718187 2017] [mpm_winnt:notice] [pid 9852:tid 572] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Sun Mar 26 11:18:43.718187 2017] [mpm_winnt:notice] [pid 9852:tid 572] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sun Mar 26 11:18:43.718187 2017] [core:notice] [pid 9852:tid 572] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sun Mar 26 11:18:43.733813 2017] [mpm_winnt:notice] [pid 9852:tid 572] AH00418: Parent: Created child process 8076
+[Sun Mar 26 11:18:45.954984 2017] [ssl:warn] [pid 8076:tid 204] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 26 11:18:46.323835 2017] [ssl:warn] [pid 8076:tid 204] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 26 11:18:46.424123 2017] [mpm_winnt:notice] [pid 8076:tid 204] AH00354: Child: Starting 150 worker threads.
+[Mon Mar 27 09:55:23.831623 2017] [ssl:warn] [pid 2284:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 27 09:55:23.934780 2017] [core:warn] [pid 2284:tid 568] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Mar 27 09:55:24.135337 2017] [ssl:warn] [pid 2284:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 27 09:55:24.967721 2017] [mpm_winnt:notice] [pid 2284:tid 568] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Mon Mar 27 09:55:24.967721 2017] [mpm_winnt:notice] [pid 2284:tid 568] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Mon Mar 27 09:55:24.967721 2017] [core:notice] [pid 2284:tid 568] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Mon Mar 27 09:55:24.967721 2017] [mpm_winnt:notice] [pid 2284:tid 568] AH00418: Parent: Created child process 5912
+[Mon Mar 27 09:55:27.079118 2017] [ssl:warn] [pid 5912:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 27 09:55:27.379570 2017] [ssl:warn] [pid 5912:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 27 09:55:27.464228 2017] [mpm_winnt:notice] [pid 5912:tid 564] AH00354: Child: Starting 150 worker threads.
+[Mon Mar 27 19:16:18.330483 2017] [ssl:warn] [pid 8736:tid 508] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 27 19:16:18.470713 2017] [core:warn] [pid 8736:tid 508] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Mar 27 19:16:18.806758 2017] [ssl:warn] [pid 8736:tid 508] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 27 19:16:19.734272 2017] [mpm_winnt:notice] [pid 8736:tid 508] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Mon Mar 27 19:16:19.734773 2017] [mpm_winnt:notice] [pid 8736:tid 508] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Mon Mar 27 19:16:19.734773 2017] [core:notice] [pid 8736:tid 508] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Mon Mar 27 19:16:19.739781 2017] [mpm_winnt:notice] [pid 8736:tid 508] AH00418: Parent: Created child process 7128
+[Mon Mar 27 19:16:22.485902 2017] [ssl:warn] [pid 7128:tid 660] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 27 19:16:22.931896 2017] [ssl:warn] [pid 7128:tid 660] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 27 19:16:23.047082 2017] [mpm_winnt:notice] [pid 7128:tid 660] AH00354: Child: Starting 150 worker threads.
+[Wed Mar 29 13:29:17.456668 2017] [ssl:warn] [pid 8276:tid 520] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Mar 29 13:29:17.560972 2017] [core:warn] [pid 8276:tid 520] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Mar 29 13:29:17.761548 2017] [ssl:warn] [pid 8276:tid 520] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Mar 29 13:29:18.494397 2017] [mpm_winnt:notice] [pid 8276:tid 520] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Mar 29 13:29:18.494397 2017] [mpm_winnt:notice] [pid 8276:tid 520] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Mar 29 13:29:18.494397 2017] [core:notice] [pid 8276:tid 520] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Mar 29 13:29:18.494397 2017] [mpm_winnt:notice] [pid 8276:tid 520] AH00418: Parent: Created child process 4832
+[Wed Mar 29 13:29:20.292070 2017] [ssl:warn] [pid 4832:tid 200] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Mar 29 13:29:20.624194 2017] [ssl:warn] [pid 4832:tid 200] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Mar 29 13:29:20.740101 2017] [mpm_winnt:notice] [pid 4832:tid 200] AH00354: Child: Starting 150 worker threads.
+[Wed Mar 29 13:59:02.787990 2017] [:error] [pid 4832:tid 1884] [client ::1:58042] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\\xampp\\htdocs\\index.php on line 53, referer: http://localhost/
+[Wed Mar 29 14:00:05.813887 2017] [:error] [pid 4832:tid 1884] [client ::1:58044] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\\xampp\\htdocs\\index.php on line 53, referer: http://localhost/
+[Wed Mar 29 14:00:08.597545 2017] [:error] [pid 4832:tid 1884] [client ::1:58044] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\\xampp\\htdocs\\index.php on line 53
+[Wed Mar 29 14:02:19.260524 2017] [:error] [pid 4832:tid 1884] [client ::1:58062] PHP Notice:  Undefined variable: sqlCommand in C:\\xampp\\htdocs\\index.php on line 54, referer: http://localhost/
+[Wed Mar 29 14:02:19.261024 2017] [:error] [pid 4832:tid 1884] [client ::1:58062] PHP Warning:  mysqli::query(): Empty query in C:\\xampp\\htdocs\\index.php on line 54, referer: http://localhost/
+[Wed Mar 29 14:30:56.912255 2017] [:error] [pid 4832:tid 1844] [client ::1:58181] PHP Notice:  Undefined variable: sql in C:\\xampp\\htdocs\\index.php on line 52
+[Wed Mar 29 14:35:10.808125 2017] [:error] [pid 4832:tid 1860] [client ::1:58259] PHP Parse error:  syntax error, unexpected 'mysql_select_db' (T_STRING) in C:\\xampp\\htdocs\\index.php on line 48
+[Wed Mar 29 14:35:23.518693 2017] [:error] [pid 4832:tid 1860] [client ::1:58260] PHP Parse error:  syntax error, unexpected 'mysql_select_db' (T_STRING) in C:\\xampp\\htdocs\\index.php on line 48
+[Wed Mar 29 14:35:24.941652 2017] [:error] [pid 4832:tid 1860] [client ::1:58260] PHP Parse error:  syntax error, unexpected 'mysql_select_db' (T_STRING) in C:\\xampp\\htdocs\\index.php on line 48
+[Wed Mar 29 14:35:28.331686 2017] [:error] [pid 4832:tid 1860] [client ::1:58260] PHP Parse error:  syntax error, unexpected 'mysql_select_db' (T_STRING) in C:\\xampp\\htdocs\\index.php on line 48
+[Wed Mar 29 14:38:16.627885 2017] [:error] [pid 4832:tid 1852] [client ::1:58265] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in C:\\xampp\\htdocs\\index.php on line 49
+[Wed Mar 29 14:38:48.272079 2017] [:error] [pid 4832:tid 1860] [client ::1:58268] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in C:\\xampp\\htdocs\\index.php on line 49
+[Wed Mar 29 14:38:50.034218 2017] [:error] [pid 4832:tid 1860] [client ::1:58268] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in C:\\xampp\\htdocs\\index.php on line 49
+[Wed Mar 29 17:18:30.690760 2017] [ssl:warn] [pid 8864:tid 588] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Mar 29 17:18:30.791045 2017] [core:warn] [pid 8864:tid 588] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Mar 29 17:18:30.991613 2017] [ssl:warn] [pid 8864:tid 588] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Mar 29 17:18:31.724828 2017] [mpm_winnt:notice] [pid 8864:tid 588] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Mar 29 17:18:31.724828 2017] [mpm_winnt:notice] [pid 8864:tid 588] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Mar 29 17:18:31.724828 2017] [core:notice] [pid 8864:tid 588] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Mar 29 17:18:31.724828 2017] [mpm_winnt:notice] [pid 8864:tid 588] AH00418: Parent: Created child process 2160
+[Wed Mar 29 17:18:33.628811 2017] [ssl:warn] [pid 2160:tid 596] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Mar 29 17:18:34.029570 2017] [ssl:warn] [pid 2160:tid 596] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Mar 29 17:18:34.152012 2017] [mpm_winnt:notice] [pid 2160:tid 596] AH00354: Child: Starting 150 worker threads.
+[Wed Mar 29 17:19:28.049910 2017] [:error] [pid 2160:tid 1904] [client ::1:58509] PHP Notice:  Undefined variable: createTab in C:\\xampp\\htdocs\\index.php on line 54
+[Wed Mar 29 17:19:28.049910 2017] [:error] [pid 2160:tid 1904] [client ::1:58509] PHP Warning:  mysqli::query(): Empty query in C:\\xampp\\htdocs\\index.php on line 54
+[Wed Mar 29 17:19:28.049910 2017] [:error] [pid 2160:tid 1904] [client ::1:58509] PHP Notice:  Undefined variable: createTab in C:\\xampp\\htdocs\\index.php on line 57
+[Wed Mar 29 17:25:44.145805 2017] [:error] [pid 2160:tid 1900] [client ::1:58524] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\\xampp\\htdocs\\index.php on line 58
+[Wed Mar 29 17:27:15.290577 2017] [:error] [pid 2160:tid 1900] [client ::1:58525] PHP Parse error:  syntax error, unexpected ')' in C:\\xampp\\htdocs\\index.php on line 57
+[Wed Mar 29 17:27:54.772175 2017] [:error] [pid 2160:tid 1900] [client ::1:58529] PHP Notice:  Undefined variable: Passwort in C:\\xampp\\htdocs\\index.php on line 60, referer: http://localhost/
+[Wed Mar 29 17:28:46.644935 2017] [:error] [pid 2160:tid 1900] [client ::1:58537] PHP Notice:  Undefined variable: Passwort in C:\\xampp\\htdocs\\index.php on line 60, referer: http://localhost/index.php
+[Wed Mar 29 17:29:41.180652 2017] [:error] [pid 2160:tid 1904] [client ::1:58546] PHP Notice:  Undefined variable: Passwort in C:\\xampp\\htdocs\\index.php on line 60, referer: http://localhost/
+[Wed Mar 29 17:55:47.425970 2017] [:error] [pid 2160:tid 1900] [client ::1:58830] PHP Parse error:  syntax error, unexpected '/' in C:\\xampp\\htdocs\\index.php on line 48
+[Wed Mar 29 17:56:12.248298 2017] [:error] [pid 2160:tid 1900] [client ::1:58831] PHP Parse error:  syntax error, unexpected '=' in C:\\xampp\\htdocs\\index.php on line 48
+[Wed Mar 29 18:38:17.298207 2017] [:error] [pid 2160:tid 1900] [client ::1:59666] PHP Notice:  Trying to get property of non-object in C:\\xampp\\htdocs\\index.php on line 83, referer: http://localhost/
+[Wed Mar 29 18:39:30.135846 2017] [:error] [pid 2160:tid 1892] [client ::1:59671] PHP Notice:  Trying to get property of non-object in C:\\xampp\\htdocs\\index.php on line 83, referer: http://localhost/
+[Wed Mar 29 19:14:37.628570 2017] [:error] [pid 2160:tid 1904] [client ::1:59878] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 106
+[Wed Mar 29 19:30:01.312490 2017] [:error] [pid 2160:tid 1900] [client ::1:59942] PHP Notice:  Undefined index: GesuchtesSpiel in C:\\xampp\\htdocs\\index.php on line 69
+[Wed Mar 29 19:30:07.943228 2017] [:error] [pid 2160:tid 1900] [client ::1:59946] PHP Notice:  Undefined index: GesuchtesSpiel in C:\\xampp\\htdocs\\index.php on line 69, referer: http://localhost/
+[Wed Mar 29 19:30:28.607426 2017] [:error] [pid 2160:tid 1896] [client ::1:59950] PHP Notice:  Undefined index: GesuchtesSpiel in C:\\xampp\\htdocs\\index.php on line 69
+[Wed Mar 29 19:30:35.882304 2017] [:error] [pid 2160:tid 1892] [client ::1:59954] PHP Notice:  Undefined index: GesuchtesSpiel in C:\\xampp\\htdocs\\index.php on line 69, referer: http://localhost/
+[Wed Mar 29 19:31:30.738885 2017] [:error] [pid 2160:tid 1896] [client ::1:59959] PHP Notice:  Undefined index: GesSpiel in C:\\xampp\\htdocs\\index.php on line 69
+[Wed Mar 29 19:32:06.481333 2017] [:error] [pid 2160:tid 1900] [client ::1:59963] PHP Notice:  Undefined index: GesSpiel in C:\\xampp\\htdocs\\index.php on line 69
+[Thu Mar 30 19:35:50.412833 2017] [ssl:warn] [pid 4468:tid 528] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 30 19:35:50.528685 2017] [core:warn] [pid 4468:tid 528] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Mar 30 19:35:50.729255 2017] [ssl:warn] [pid 4468:tid 528] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 30 19:35:51.510131 2017] [mpm_winnt:notice] [pid 4468:tid 528] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Thu Mar 30 19:35:51.510131 2017] [mpm_winnt:notice] [pid 4468:tid 528] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Thu Mar 30 19:35:51.510131 2017] [core:notice] [pid 4468:tid 528] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Thu Mar 30 19:35:51.510131 2017] [mpm_winnt:notice] [pid 4468:tid 528] AH00418: Parent: Created child process 7688
+[Thu Mar 30 19:35:53.548312 2017] [ssl:warn] [pid 7688:tid 576] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 30 19:35:53.855497 2017] [ssl:warn] [pid 7688:tid 576] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 30 19:35:53.971414 2017] [mpm_winnt:notice] [pid 7688:tid 576] AH00354: Child: Starting 150 worker threads.
+[Thu Mar 30 19:52:21.768423 2017] [:error] [pid 7688:tid 1880] [client ::1:61321] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in C:\\xampp\\htdocs\\index.php on line 110, referer: http://localhost/
+[Thu Mar 30 19:54:04.727300 2017] [:error] [pid 7688:tid 1884] [client ::1:61328] PHP Parse error:  syntax error, unexpected ';' in C:\\xampp\\htdocs\\index.php on line 114
+[Thu Mar 30 19:54:12.820945 2017] [:error] [pid 7688:tid 1884] [client ::1:61329] PHP Parse error:  syntax error, unexpected end of file in C:\\xampp\\htdocs\\index.php on line 198
+[Thu Mar 30 19:54:27.760334 2017] [:error] [pid 7688:tid 1884] [client ::1:61330] PHP Parse error:  syntax error, unexpected end of file in C:\\xampp\\htdocs\\index.php on line 198
+[Thu Mar 30 19:55:39.559159 2017] [:error] [pid 7688:tid 1884] [client ::1:61333] PHP Parse error:  syntax error, unexpected end of file in C:\\xampp\\htdocs\\index.php on line 198
+[Thu Mar 30 19:56:31.347089 2017] [:error] [pid 7688:tid 1896] [client ::1:61345] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 114
+[Thu Mar 30 19:56:32.981879 2017] [:error] [pid 7688:tid 1896] [client ::1:61345] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 114
+[Thu Mar 30 19:56:38.876628 2017] [:error] [pid 7688:tid 1896] [client ::1:61346] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 114
+[Thu Mar 30 20:01:26.547847 2017] [:error] [pid 7688:tid 1888] [client ::1:61446] PHP Warning:  count() expects at least 1 parameter, 0 given in C:\\xampp\\htdocs\\index.php on line 117, referer: http://localhost/
+[Thu Mar 30 20:01:26.548847 2017] [:error] [pid 7688:tid 1888] [client ::1:61446] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in C:\\xampp\\htdocs\\index.php on line 117, referer: http://localhost/
+[Thu Mar 30 20:03:51.801546 2017] [:error] [pid 7688:tid 1892] [client ::1:61471] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\\xampp\\htdocs\\index.php on line 116
+[Sat Apr 01 00:20:15.781335 2017] [ssl:warn] [pid 2148:tid 556] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 01 00:20:15.912885 2017] [core:warn] [pid 2148:tid 556] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Apr 01 00:20:16.151236 2017] [ssl:warn] [pid 2148:tid 556] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 01 00:20:16.883537 2017] [mpm_winnt:notice] [pid 2148:tid 556] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Sat Apr 01 00:20:16.883537 2017] [mpm_winnt:notice] [pid 2148:tid 556] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sat Apr 01 00:20:16.883537 2017] [core:notice] [pid 2148:tid 556] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 01 00:20:16.899164 2017] [mpm_winnt:notice] [pid 2148:tid 556] AH00418: Parent: Created child process 10020
+[Sat Apr 01 00:20:18.754176 2017] [ssl:warn] [pid 10020:tid 516] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 01 00:20:19.070324 2017] [ssl:warn] [pid 10020:tid 516] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 01 00:20:19.154988 2017] [mpm_winnt:notice] [pid 10020:tid 516] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 01 00:33:38.721740 2017] [:error] [pid 10020:tid 1892] [client ::1:64827] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 118, referer: http://localhost/?GesSpiel=m&GesuchtesPasswort=
+[Sat Apr 01 00:37:31.691205 2017] [:error] [pid 10020:tid 1876] [client ::1:64916] PHP Fatal error:  Cannot use object of type mysqli_result as array in C:\\xampp\\htdocs\\index.php on line 119, referer: http://localhost/
+[Sat Apr 01 00:39:43.422370 2017] [:error] [pid 10020:tid 1876] [client ::1:64928] PHP Warning:  mysql_result() expects parameter 1 to be resource, object given in C:\\xampp\\htdocs\\index.php on line 119, referer: http://localhost/
+[Sat Apr 01 00:47:00.190831 2017] [:error] [pid 10020:tid 1892] [client ::1:64955] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in C:\\xampp\\htdocs\\index.php on line 119, referer: http://localhost/
+[Sat Apr 01 00:54:52.209360 2017] [:error] [pid 10020:tid 1884] [client ::1:64991] PHP Notice:  Undefined index: Passwort in C:\\xampp\\htdocs\\index.php on line 119, referer: http://localhost/?GesSpiel=ja&GesuchtesPasswort=k
+[Sat Apr 01 00:56:47.454195 2017] [:error] [pid 10020:tid 1860] [client ::1:65010] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in C:\\xampp\\htdocs\\index.php on line 115, referer: http://localhost/
+[Sat Apr 01 00:58:05.800672 2017] [:error] [pid 10020:tid 1860] [client ::1:65018] PHP Notice:  Undefined index: Passwort in C:\\xampp\\htdocs\\index.php on line 119, referer: http://localhost/
+[Sat Apr 01 00:58:55.140027 2017] [:error] [pid 10020:tid 1868] [client ::1:65026] PHP Notice:  Array to string conversion in C:\\xampp\\htdocs\\index.php on line 121, referer: http://localhost/
+[Sat Apr 01 00:59:19.664117 2017] [:error] [pid 10020:tid 1860] [client ::1:65033] PHP Notice:  Undefined offset: 0 in C:\\xampp\\htdocs\\index.php on line 121, referer: http://localhost/
+[Sat Apr 01 00:59:39.535971 2017] [:error] [pid 10020:tid 1860] [client ::1:65038] PHP Notice:  Undefined offset: 1 in C:\\xampp\\htdocs\\index.php on line 121, referer: http://localhost/
+[Sat Apr 01 01:02:40.819688 2017] [:error] [pid 10020:tid 1860] [client ::1:65142] PHP Fatal error:  Cannot use object of type mysqli_result as array in C:\\xampp\\htdocs\\index.php on line 115, referer: http://localhost/
+[Sat Apr 01 01:04:30.551018 2017] [:error] [pid 10020:tid 1868] [client ::1:65164] PHP Fatal error:  Cannot use object of type mysqli_result as array in C:\\xampp\\htdocs\\index.php on line 115, referer: http://localhost/
+[Wed Apr 05 11:42:21.294973 2017] [ssl:warn] [pid 5628:tid 512] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 05 11:42:21.434524 2017] [core:warn] [pid 5628:tid 512] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Apr 05 11:42:21.665129 2017] [ssl:warn] [pid 5628:tid 512] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 05 11:42:24.247531 2017] [mpm_winnt:notice] [pid 5628:tid 512] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Apr 05 11:42:24.247531 2017] [mpm_winnt:notice] [pid 5628:tid 512] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Apr 05 11:42:24.247531 2017] [core:notice] [pid 5628:tid 512] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Apr 05 11:42:24.264541 2017] [mpm_winnt:notice] [pid 5628:tid 512] AH00418: Parent: Created child process 11056
+[Wed Apr 05 11:42:30.430667 2017] [ssl:warn] [pid 11056:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 05 11:42:31.834053 2017] [ssl:warn] [pid 11056:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 05 11:42:32.215095 2017] [mpm_winnt:notice] [pid 11056:tid 568] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 05 23:21:06.998912 2017] [ssl:warn] [pid 5864:tid 492] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 05 23:21:07.123495 2017] [core:warn] [pid 5864:tid 492] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Apr 05 23:21:07.718793 2017] [ssl:warn] [pid 5864:tid 492] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 05 23:21:10.663493 2017] [mpm_winnt:notice] [pid 5864:tid 492] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Wed Apr 05 23:21:10.664494 2017] [mpm_winnt:notice] [pid 5864:tid 492] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Apr 05 23:21:10.664494 2017] [core:notice] [pid 5864:tid 492] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Apr 05 23:21:10.683033 2017] [mpm_winnt:notice] [pid 5864:tid 492] AH00418: Parent: Created child process 4612
+[Wed Apr 05 23:21:16.494452 2017] [ssl:warn] [pid 4612:tid 756] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 05 23:21:17.807437 2017] [ssl:warn] [pid 4612:tid 756] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 05 23:21:17.914484 2017] [mpm_winnt:notice] [pid 4612:tid 756] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 05 23:30:25.232378 2017] [:error] [pid 4612:tid 1940] [client ::1:52323] PHP Parse error:  syntax error, unexpected '}' in C:\\xampp\\htdocs\\index.php on line 104
+[Wed Apr 05 23:32:42.962298 2017] [:error] [pid 4612:tid 1908] [client ::1:52349] PHP Parse error:  syntax error, unexpected '$filename' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 103
+[Wed Apr 05 23:33:15.061795 2017] [:error] [pid 4612:tid 1908] [client ::1:52353] PHP Parse error:  syntax error, unexpected '$filename' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 103
+[Wed Apr 05 23:34:38.779676 2017] [:error] [pid 4612:tid 1908] [client ::1:52359] PHP Parse error:  syntax error, unexpected '$filename' (T_VARIABLE) in C:\\xampp\\htdocs\\index.php on line 103
+[Thu Apr 06 09:02:56.519246 2017] [ssl:warn] [pid 1328:tid 576] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 06 09:02:56.658475 2017] [core:warn] [pid 1328:tid 576] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Apr 06 09:02:56.937431 2017] [ssl:warn] [pid 1328:tid 576] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 06 09:02:58.346227 2017] [mpm_winnt:notice] [pid 1328:tid 576] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Thu Apr 06 09:02:58.346727 2017] [mpm_winnt:notice] [pid 1328:tid 576] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Thu Apr 06 09:02:58.346727 2017] [core:notice] [pid 1328:tid 576] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Thu Apr 06 09:02:58.351233 2017] [mpm_winnt:notice] [pid 1328:tid 576] AH00418: Parent: Created child process 10940
+[Thu Apr 06 09:03:00.958982 2017] [ssl:warn] [pid 10940:tid 644] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 06 09:03:01.359136 2017] [ssl:warn] [pid 10940:tid 644] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 06 09:03:01.476826 2017] [mpm_winnt:notice] [pid 10940:tid 644] AH00354: Child: Starting 150 worker threads.
+[Thu Apr 06 18:29:02.100793 2017] [ssl:warn] [pid 3824:tid 172] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 06 18:29:02.232333 2017] [core:warn] [pid 3824:tid 172] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Apr 06 18:29:02.479786 2017] [ssl:warn] [pid 3824:tid 172] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 06 18:29:03.319831 2017] [mpm_winnt:notice] [pid 3824:tid 172] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Thu Apr 06 18:29:03.319831 2017] [mpm_winnt:notice] [pid 3824:tid 172] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Thu Apr 06 18:29:03.319831 2017] [core:notice] [pid 3824:tid 172] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Thu Apr 06 18:29:03.319831 2017] [mpm_winnt:notice] [pid 3824:tid 172] AH00418: Parent: Created child process 5620
+[Thu Apr 06 18:29:04.972119 2017] [ssl:warn] [pid 5620:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 06 18:29:05.288121 2017] [ssl:warn] [pid 5620:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 06 18:29:05.388130 2017] [mpm_winnt:notice] [pid 5620:tid 572] AH00354: Child: Starting 150 worker threads.
+[Sun Apr 09 17:30:54.285218 2017] [ssl:warn] [pid 12392:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 17:30:54.416756 2017] [core:warn] [pid 12392:tid 572] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Apr 09 17:30:54.648573 2017] [ssl:warn] [pid 12392:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 17:30:55.419078 2017] [mpm_winnt:notice] [pid 12392:tid 572] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Sun Apr 09 17:30:55.419078 2017] [mpm_winnt:notice] [pid 12392:tid 572] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sun Apr 09 17:30:55.419078 2017] [core:notice] [pid 12392:tid 572] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sun Apr 09 17:30:55.419078 2017] [mpm_winnt:notice] [pid 12392:tid 572] AH00418: Parent: Created child process 3804
+[Sun Apr 09 17:30:57.036815 2017] [ssl:warn] [pid 3804:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 17:30:57.336483 2017] [ssl:warn] [pid 3804:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 17:30:57.420721 2017] [mpm_winnt:notice] [pid 3804:tid 572] AH00354: Child: Starting 150 worker threads.
+[Sun Apr 09 17:43:30.074599 2017] [ssl:warn] [pid 5660:tid 624] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 17:43:30.708630 2017] [core:warn] [pid 5660:tid 624] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Apr 09 17:43:32.087378 2017] [ssl:warn] [pid 5660:tid 624] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 17:43:38.420597 2017] [mpm_winnt:notice] [pid 5660:tid 624] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Sun Apr 09 17:43:38.421097 2017] [mpm_winnt:notice] [pid 5660:tid 624] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sun Apr 09 17:43:38.421097 2017] [core:notice] [pid 5660:tid 624] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sun Apr 09 17:43:38.494717 2017] [mpm_winnt:notice] [pid 5660:tid 624] AH00418: Parent: Created child process 3492
+[Sun Apr 09 17:44:00.121704 2017] [ssl:warn] [pid 3492:tid 732] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 17:44:02.204592 2017] [ssl:warn] [pid 3492:tid 732] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 17:44:02.837631 2017] [mpm_winnt:notice] [pid 3492:tid 732] AH00354: Child: Starting 150 worker threads.
+[Sun Apr 09 17:47:35.909900 2017] [:error] [pid 3492:tid 1904] [client ::1:49742] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\\xampp\\htdocs\\CreateGame.php on line 51
+[Sun Apr 09 17:47:43.873842 2017] [:error] [pid 3492:tid 1904] [client ::1:49743] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\\xampp\\htdocs\\CreateGame.php on line 51
+[Sun Apr 09 17:48:28.014223 2017] [:error] [pid 3492:tid 1904] [client ::1:49768] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\\xampp\\htdocs\\CreateGame.php on line 51
+[Sun Apr 09 17:48:29.428453 2017] [:error] [pid 3492:tid 1904] [client ::1:49768] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\\xampp\\htdocs\\CreateGame.php on line 51
+[Sun Apr 09 17:52:40.338634 2017] [:error] [pid 3492:tid 1904] [client ::1:49961] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in C:\\xampp\\htdocs\\CreateGame.php on line 47
+[Sun Apr 09 17:54:25.925400 2017] [:error] [pid 3492:tid 1896] [client ::1:49969] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in C:\\xampp\\htdocs\\CreateGame.php on line 45
+[Sun Apr 09 17:54:25.928905 2017] [:error] [pid 3492:tid 1896] [client ::1:49969] PHP Warning:  mysql_query(): A link to the server could not be established in C:\\xampp\\htdocs\\CreateGame.php on line 45
+[Sun Apr 09 17:54:25.931408 2017] [:error] [pid 3492:tid 1896] [client ::1:49969] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in C:\\xampp\\htdocs\\CreateGame.php on line 47
+[Sun Apr 09 17:54:25.933915 2017] [:error] [pid 3492:tid 1896] [client ::1:49969] PHP Notice:  Undefined variable: result in C:\\xampp\\htdocs\\CreateGame.php on line 50
+[Sun Apr 09 17:54:25.936916 2017] [:error] [pid 3492:tid 1896] [client ::1:49969] PHP Notice:  Trying to get property of non-object in C:\\xampp\\htdocs\\CreateGame.php on line 50
+[Sun Apr 09 17:55:41.971365 2017] [:error] [pid 3492:tid 1896] [client ::1:49978] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, string given in C:\\xampp\\htdocs\\CreateGame.php on line 47
+[Sun Apr 09 17:58:02.918018 2017] [:error] [pid 3492:tid 1888] [client ::1:49998] PHP Fatal error:  Cannot use object of type mysqli_result as array in C:\\xampp\\htdocs\\CreateGame.php on line 47
+[Sun Apr 09 18:03:31.488687 2017] [:error] [pid 3492:tid 1308] [client ::1:50083] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in C:\\xampp\\htdocs\\CreateGame.php on line 49
+[Sun Apr 09 18:04:04.266647 2017] [:error] [pid 3492:tid 1308] [client ::1:50088] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in C:\\xampp\\htdocs\\CreateGame.php on line 45
+[Sun Apr 09 18:04:04.266647 2017] [:error] [pid 3492:tid 1308] [client ::1:50088] PHP Warning:  mysql_query(): A link to the server could not be established in C:\\xampp\\htdocs\\CreateGame.php on line 45
+[Sun Apr 09 18:04:04.282273 2017] [:error] [pid 3492:tid 1308] [client ::1:50088] PHP Warning:  mysqli::query(): Empty query in C:\\xampp\\htdocs\\CreateGame.php on line 46
+[Sun Apr 09 18:04:04.282273 2017] [:error] [pid 3492:tid 1308] [client ::1:50088] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in C:\\xampp\\htdocs\\CreateGame.php on line 49
+[Sun Apr 09 18:04:04.282273 2017] [:error] [pid 3492:tid 1308] [client ::1:50088] PHP Notice:  Trying to get property of non-object in C:\\xampp\\htdocs\\CreateGame.php on line 55
+[Sun Apr 09 18:04:28.059071 2017] [:error] [pid 3492:tid 1308] [client ::1:50097] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in C:\\xampp\\htdocs\\CreateGame.php on line 49
+[Sun Apr 09 18:06:29.254744 2017] [:error] [pid 3492:tid 1308] [client ::1:50120] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\\xampp\\htdocs\\CreateGame.php on line 58
+[Sun Apr 09 18:29:57.263931 2017] [ssl:warn] [pid 7136:tid 756] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 18:29:57.445226 2017] [core:warn] [pid 7136:tid 756] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Apr 09 18:29:57.791322 2017] [ssl:warn] [pid 7136:tid 756] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 18:29:58.705704 2017] [mpm_winnt:notice] [pid 7136:tid 756] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Sun Apr 09 18:29:58.705704 2017] [mpm_winnt:notice] [pid 7136:tid 756] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sun Apr 09 18:29:58.705704 2017] [core:notice] [pid 7136:tid 756] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sun Apr 09 18:29:58.710713 2017] [mpm_winnt:notice] [pid 7136:tid 756] AH00418: Parent: Created child process 6884
+[Sun Apr 09 18:30:00.859211 2017] [ssl:warn] [pid 6884:tid 436] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 18:30:01.227310 2017] [ssl:warn] [pid 6884:tid 436] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Apr 09 18:30:01.326974 2017] [mpm_winnt:notice] [pid 6884:tid 436] AH00354: Child: Starting 150 worker threads.
+[Tue Apr 11 15:16:49.151749 2017] [ssl:warn] [pid 6760:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 11 15:16:49.283284 2017] [core:warn] [pid 6760:tid 564] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 11 15:16:49.468233 2017] [ssl:warn] [pid 6760:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 11 15:16:50.270083 2017] [mpm_winnt:notice] [pid 6760:tid 564] AH00455: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 configured -- resuming normal operations
+[Tue Apr 11 15:16:50.270083 2017] [mpm_winnt:notice] [pid 6760:tid 564] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Tue Apr 11 15:16:50.270083 2017] [core:notice] [pid 6760:tid 564] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Tue Apr 11 15:16:50.270083 2017] [mpm_winnt:notice] [pid 6760:tid 564] AH00418: Parent: Created child process 2432
+[Tue Apr 11 15:16:52.816921 2017] [ssl:warn] [pid 2432:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 11 15:16:53.117794 2017] [ssl:warn] [pid 2432:tid 580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 11 15:16:53.218082 2017] [mpm_winnt:notice] [pid 2432:tid 580] AH00354: Child: Starting 150 worker threads.
