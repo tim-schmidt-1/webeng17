@@ -1,35 +1,3 @@
- <!DOCTYPE html>
- <html lang="de">
-   <head>
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
-     <meta name="description" content="">
-     <meta name="author" content="">
-     <link rel="icon" href="favicon.ico">
-
-     <title>WE</title>
-
-     <!-- Bootstrap-CSS -->
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-     <!-- Besondere Stile für diese Vorlage -->
-     <link href="signin.css" rel="stylesheet">
-
-     <!-- Nur für Testzwecke. Kopiere diese Zeilen nicht in echte Projekte! -->
-     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-     <script src="js/ie-emulation-modes-warning.js"></script>
-
-     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
-     <!--[if lt IE 9]>
-       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-     <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="overlayStyle.css">
-   </head>
-
 
  <?php
 $servername = "localhost";
@@ -136,8 +104,42 @@ if(isset($_GET["GesSpiel"])){
 
 ?>
 
+ <!DOCTYPE html>
+ <html lang="de">
+   <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <link rel="icon" href="favicon.ico">
 
- <form action="/index.php" method="post">
+     <title>WE</title>
+
+     <!-- Bootstrap-CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Besondere Stile für diese Vorlage -->
+     <link href="signin.css" rel="stylesheet">
+
+     <!-- Nur für Testzwecke. Kopiere diese Zeilen nicht in echte Projekte! -->
+     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+     <script src="js/ie-emulation-modes-warning.js"></script>
+
+     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
+     <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+     <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="overlayStyle.css">
+
+    <script src="index.js"></script>
+   </head>
+
+
+
 
 <body background="town.jpg">
 
@@ -146,7 +148,7 @@ if(isset($_GET["GesSpiel"])){
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <form>
+    <form action="/index.php" method="post">
        <input type="text" id="SpielName" class="form-control" name="SpielName"  placeholder="Name des Spiels" required autofocus>
        <p></p>
        <input type="password" id="eingabefeldPasswort" class="form-control" name="Passwort" placeholder="Passwort">
@@ -162,7 +164,7 @@ if(isset($_GET["GesSpiel"])){
 <div id="searchBar" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick=" closeSearchBar()">&times;</a>
   <div class="overlay-content">
-    <form>
+    <form action="/index.php" method="post">
        <input type="text" id="GesSpiel" class="form-control" name="GesSpiel"  placeholder="Spiel suchen" required autofocus>
        <p></p>
        <input type="password" id="GesuchtesPasswort" class="form-control" name="GesuchtesPasswort" placeholder="Passwort">
@@ -173,35 +175,6 @@ if(isset($_GET["GesSpiel"])){
 </div>
 <!-- End overlay -->
 
-<script>
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-</script>
-
-<script>
-function openSearchBar() {
-    document.getElementById("searchBar").style.width = "100%";
-}
-
-function closeSearchBar() {
-    document.getElementById("searchBar").style.width = "0%";
-}
-
-function createGame(){
-
-  if(document.getElementById("SpielName").value != ''){
-
-      window.location.href = "createGame.php";
-      //window.alert(document.getElementById("SpielName").value);
-    }
-}
-</script>
-
    <div class="container">
         <p></p>
         <button class="btn btn-lg btn-primary btn-block" onclick="openNav()">Spiel erstellen</button>
@@ -210,4 +183,4 @@ function createGame(){
        </div> <!-- /container -->
 
 </body>
-</form>
+</html>
