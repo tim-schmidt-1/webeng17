@@ -45,7 +45,6 @@ if(isset($_POST["SpielName"])){
   $sql = "INSERT INTO Basis (Spielname, Passwort)
   VALUES ('$spielName', '$passwort')";
 
-
   if ($conn->query($sql) === TRUE) {
     //  echo "New record created successfully";
   } else {

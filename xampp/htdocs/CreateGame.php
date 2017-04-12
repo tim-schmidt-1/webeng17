@@ -56,11 +56,12 @@
   }
    $SpName =  $data[0];
 
-   if (isset($_POST["btnPosition"])) {
+   if(isset($_POST["SpielName"])){
      $breite =  123;
      $laenge = 3;
      $insertData =  "INSERT INTO $SpName (Hinweis, Breitengrad, Laengengrad, Entdeckt)
      VALUES ('A', '$breite', '$laenge', 'FALSE')";
+     echo "ja";
    }
 
 ?>
@@ -73,8 +74,9 @@
 
     <div class="container">
       <h1><?= $SpName ?></h1>
-      <form action="CreateGame.php" method="POST">
-      <button type="button" name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick="getLocation()">+</button>
+      <form action="/CreateGame.php" method="post">
+         <input type="text" id="SpielName" class="form-control" name="SpielName"  placeholder="Name des Spiels" required autofocus>
+         <button type="button" name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick="getLocation()">+</button>
       </form>
       <p id="demo"></p>
 
@@ -112,7 +114,7 @@
     ================================================== -->
     <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
