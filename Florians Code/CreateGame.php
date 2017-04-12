@@ -74,7 +74,7 @@
     <div class="container">
       <h1><?= $SpName ?></h1>
       <form action="/CreateGame.php" method="POST">
-      <button type="button" name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick="getLocation()">+</button>
+      <input type="submit" value="+" name="btnPosition">
       </form>
       <p id="demo"></p>
 
