@@ -4,21 +4,17 @@ $servername = "localhost";
 $username = "user1";
 $password = "Test123";
 $dbName = "mydbflorian";
-
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbName );
-
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 /*$sql = "CREATE TABLE Basis (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Spielname VARCHAR(30) NOT NULL,
 Passwort VARCHAR(30)
 )";
-
 $createTab = "CREATE TABLE E (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 Hinweis VARCHAR,
@@ -26,32 +22,23 @@ Breitengrad VARCHAR,
 Laengengrad VARCHAR,
 Entdeckt BOOLEAN
 )";
-
-
 if ($conn->query($sql) === TRUE) {
     echo "Table Basis created successfully";
 } else {
     echo "Error creating table: " . $conn->error;
 }*/
-
-
 //Create game
 if(isset($_POST["SpielName"])){
-
   //Entry in basis-tab
   $spielName = $_POST["SpielName"];
   $passwort = $_POST["Passwort"];
-
   $sql = "INSERT INTO Basis (Spielname, Passwort)
   VALUES ('$spielName', '$passwort')";
-
   if ($conn->query($sql) === TRUE) {
     //  echo "New record created successfully";
   } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
   }
-
-
   $createTab = "CREATE TABLE $spielName (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   Hinweis VARCHAR(100),
@@ -59,27 +46,19 @@ if(isset($_POST["SpielName"])){
   Laengengrad DOUBLE,
   Entdeckt BOOLEAN
   )";
-
-
     if ($conn->query($createTab) === TRUE) {
       //  echo "New Tab";
     } else {
         echo "Error: " . $createTab . "<br>" . $conn->error;
     }
-
 //  "parent.location='CreateGame.html'";
 }
-
-
 if(isset($_GET["GesSpiel"])){
-
   //$getGames = "SELECT Spielname FROM basis";
   $actGame = $_GET["GesSpiel"];
   $actPW = $_GET["GesuchtesPasswort"];
-
   $sql = "SELECT Spielname, Passwort FROM basis";
   $result = $conn->query($sql);
-
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -89,9 +68,7 @@ if(isset($_GET["GesSpiel"])){
     }
   }
 }
-
 //echo "Connected successfully";
-
 // Create database
 //$sql = "CREATE DATABASE myDBFlorian";
 //    echo "Database created successfully";
@@ -99,8 +76,6 @@ if(isset($_GET["GesSpiel"])){
 //    echo "Error creating database: " . $conn->error;
 //}
 //background="town.jpg"
-
-
 ?>
 
  <!DOCTYPE html>
