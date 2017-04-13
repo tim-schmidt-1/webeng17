@@ -32,8 +32,8 @@ if(isset($_POST["SpielName"])){
   //Entry in basis-tab
   $spielName = $_POST["SpielName"];
   $passwort = $_POST["Passwort"];
-  $sql = "INSERT INTO Basis (Spielname, Passwort)
-  VALUES ('$spielName', '$passwort')";
+  $sql = "INSERT INTO Basis (Spielname, Passwort, Oeffentlich)
+  VALUES ('$spielName', '$passwort', FALSE)";
   if ($conn->query($sql) === TRUE) {
     //  echo "New record created successfully";
   } else {
@@ -41,7 +41,7 @@ if(isset($_POST["SpielName"])){
   }
   $createTab = "CREATE TABLE $spielName (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  Hinweis VARCHAR(100),
+  Hinweis VARCHAR(150),
   Breitengrad DOUBLE,
   Laengengrad DOUBLE,
   Entdeckt BOOLEAN

@@ -51,3 +51,12 @@
 
       }
     }
+    .facebook-button {
+    background: url('facebook-logo.png') left center no-repeat;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    border-top-color: rgb(212, 63, 58);
+    border-right-color: rgb(212, 63, 58);
+    border-bottom-color: rgb(212, 63, 58);
+    border-left-color: rgb(212, 63, 58);
+  }

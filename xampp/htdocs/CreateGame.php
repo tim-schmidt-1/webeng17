@@ -12,7 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="starter-template.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="button.css">
-    <link rel="stylesheet" type="text/css" href="overlayCG.css">
+    <link rel="stylesheet" type="text/css" href="overlayStyle.css">
 
     <title>WER</title>
 
@@ -63,11 +63,20 @@
          echo "Error: " . $insertData . "<br>" . $conn->error;
      }
    }
+    if(isset($_POST["btPublish"])){
+      $sql ="UPDATE basis SET Oeffentlich=TRUE WHERE Spielname = '$SpName'";
+
+      if ($conn->query($sql) === TRUE) {
+         echo "Good";
+      } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+      }
+    }
 ?>
   <body>
 
     <!--Overlay -->
-    <div id="dia" class="overlayCG">
+    <div id="dia" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
         <form action="/CreateGame.php" method="post">
@@ -81,13 +90,30 @@
       </div>
     </div>
 
+    <!--Secondoverlay -->
+    <div id="saveOv" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSaveOv()">&times;</a>
+      <div class="overlay-content">
+        <form action="/CreateGame.php" method="post">
+             <p style="color:white; font-size:160%; text-align:center">Wollen Sie das Spiel veröffentlichen?</p>
+            <p></p>
+           <button name="btPublish" class="btn btn-lg btn-primary btn-block" type="submit">Speichern</button>
+         </form>
+      </div>
+    </div>
+
 
     <div class="container">
       <h1 align="center"><?= $SpName ?></h1>
             <button name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick="openDia(); getLocation()">+</button>
+            <p></p>
+
+              <button name="btSave" type="submit" class="btn btn-danger btn-circle btn-xl" onClick="openSaveOv()">
+              <span class="glyphicon glyphicon-floppy-disk"></span>
+              </button>
+
 
       <script>
-
 
         function showPosition(position) {
              document.getElementById("latitude").value = position.coords.latitude;
