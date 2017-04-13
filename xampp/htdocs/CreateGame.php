@@ -74,7 +74,6 @@
     }
 ?>
   <body>
-
     <!--Overlay -->
     <div id="dia" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -112,12 +111,7 @@
               <span class="glyphicon glyphicon-floppy-disk"></span>
               </button>
 
-    <div class="container">
-      <h1><?= $SpName ?></h1>
-      <form action="/CreateGame.php" method="post">
-         <input type="text" id="SpielName" class="form-control" name="SpielName"  placeholder="Name des Spiels" required autofocus>
-         <button type="button" name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick="getLocation()">+</button>
-      </form>
+
       <p id="demo"></p>
 
       <script>

@@ -14,7 +14,8 @@ app.use( express.static( __dirname + '/views' ));
 
 
 app.get('/', function (req, res) {
-    res.sendFile( path.join( __dirname, 'views', 'index.html' ));
+  //  res.sendFile( path.join( __dirname, 'views', 'hunter.html' ));
+    res.sendFile( "C:/Users/IBM_ADMIN/Desktop/DH/4. Semester/Webengineering/GitCode/webeng17/bluemixversion/views/hunter.html" );
   });
 
 
