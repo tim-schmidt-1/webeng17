@@ -6,8 +6,8 @@ $password = "Test123";
 $dbName = "mydbflorian";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbName );
-
+$conn = // new mysqli($servername, $username, $password, $dbName );
+oci_connect('talanx', '1234', '//localhost\:1521/xe');
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
