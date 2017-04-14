@@ -11,23 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbName );
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-/*$sql = "CREATE TABLE Basis (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-Spielname VARCHAR(30) NOT NULL,
-Passwort VARCHAR(30)
-)";
-$createTab = "CREATE TABLE E (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-Hinweis VARCHAR,
-Breitengrad VARCHAR,
-Laengengrad VARCHAR,
-Entdeckt BOOLEAN
-)";
-if ($conn->query($sql) === TRUE) {
-    echo "Table Basis created successfully";
-} else {
-    echo "Error creating table: " . $conn->error;
-}*/
+
 //Create game
 if(isset($_POST["SpielName"])){
   //Entry in basis-tab
@@ -54,21 +38,7 @@ if(isset($_POST["SpielName"])){
     }
 //  "parent.location='CreateGame.html'";
 }
-if(isset($_GET["GesSpiel"])){
-  //$getGames = "SELECT Spielname FROM basis";
-  $actGame = $_GET["GesSpiel"];
-  $actPW = $_GET["GesuchtesPasswort"];
-  $sql = "SELECT Spielname, Passwort FROM basis";
-  $result = $conn->query($sql);
-  if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-      if($row["Spielname"] == $actGame and $row["Passwort"] == $actPW ){
-             echo $row["Spielname"]. "<br>";
-      }
-    }
-  }
-}
+
 //echo "Connected successfully";
 // Create database
 //$sql = "CREATE DATABASE myDBFlorian";
@@ -106,13 +76,12 @@ if(isset($_GET["GesSpiel"])){
      <!--[if lt IE 9]>
        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-     <![endif]-->
+     <![endif]    "-->
 
     <link rel="stylesheet" type="text/css" href="overlayStyle.css">
 
     <script src="index.js"></script>
    </head>
-
 
 
 
@@ -139,7 +108,7 @@ if(isset($_GET["GesSpiel"])){
 <div id="searchBar" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick=" closeSearchBar()">&times;</a>
   <div class="overlay-content">
-    <form action="/index.php" method="post">
+    <form action="/GetData.php" method="post">
        <input type="text" id="GesSpiel" class="form-control" name="GesSpiel"  placeholder="Spiel suchen" required autofocus>
        <p></p>
        <input type="password" id="GesuchtesPasswort" class="form-control" name="GesuchtesPasswort" placeholder="Passwort">

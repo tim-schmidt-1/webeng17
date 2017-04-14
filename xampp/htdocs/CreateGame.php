@@ -80,8 +80,8 @@
       <div class="overlay-content">
         <form action="/CreateGame.php" method="post">
              <p></p>
-             <input type="hidden" id="longitude" name="longitude" />
-             <input type="hidden" id="latitude" name="latitude" />
+             <input type="text" id="longitude" name="longitude" />
+             <input type="text" id="latitude" name="latitude" />
              <input type="text" id="btSetPoint" class="form-control" name="btSetPoint"  placeholder="Geben Sie einen Hinweis" required autofocus>
             <p></p>
            <button class="btn btn-lg btn-primary btn-block" type="submit">Punkt setzen</button>
@@ -104,13 +104,13 @@
 
     <div class="container">
       <h1 align="center"><?= $SpName ?></h1>
-            <button name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick="openDia(); getLocation()">+</button>
+            <button name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick=" getLocation(); openDia();">+</button>
             <p></p>
 
               <button name="btSave" type="submit" class="btn btn-danger btn-circle btn-xl" onClick="openSaveOv()">
               <span class="glyphicon glyphicon-floppy-disk"></span>
               </button>
-
+              
 
       <p id="demo"></p>
 
