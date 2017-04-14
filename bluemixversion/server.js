@@ -2,6 +2,7 @@
 var express = require('express');
 var app     = express();
 var http    = require('http');
+var path = require('path');
 
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
@@ -14,8 +15,8 @@ app.use( express.static( __dirname + '/views' ));
 
 
 app.get('/', function (req, res) {
-  //  res.sendFile( path.join( __dirname, 'views', 'hunter.html' ));
-    res.sendFile( "C:/Users/IBM_ADMIN/Desktop/DH/4. Semester/Webengineering/GitCode/webeng17/bluemixversion/views/hunter.html" );
+    res.sendFile( path.join( __dirname, 'views', 'hunter.html' ));
+  //  res.sendFile( "C:/Users/IBM_ADMIN/Desktop/DH/4. Semester/Webengineering/GitCode/webeng17/bluemixversion/views/hunter.html" );
   });
 
 
