@@ -108,7 +108,7 @@ if(isset($_POST["SpielName"])){
 <div id="searchBar" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick=" closeSearchBar()">&times;</a>
   <div class="overlay-content">
-    <form action="/GetData.php" method="post">
+    <form action="/hunter.php" method="post">
        <input type="text" id="GesSpiel" class="form-control" name="GesSpiel"  placeholder="Spiel suchen" required autofocus>
        <p></p>
        <input type="password" id="GesuchtesPasswort" class="form-control" name="GesuchtesPasswort" placeholder="Passwort">
