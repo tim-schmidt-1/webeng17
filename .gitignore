@@ -1,0 +1,4 @@
+xampp/apache/logs/access.log
+xampp/apache/logs/error.log
+xampp/apache/logs/httpd.pid
+xampp/xampp-control.log
