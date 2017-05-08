@@ -14,10 +14,8 @@
     <link rel="stylesheet" type="text/css" href="button.css">
     <link rel="stylesheet" type="text/css" href="overlayStyle.css">
 
-    <title>WER</title>
-
     <script src="js/ie-emulation-modes-warning.js"></script>
-      <script src="CreateGame.js"></script>
+    <script src="CreateGame.js"></script>
   </head>
 
 
@@ -45,7 +43,6 @@
             $data[] = $row['Spielname'];
     }
   }
-   $SpName =  $data[0];
 
    //entry in db when u want to set point on map
    if(isset($_POST["btSetPoint"])){
@@ -53,6 +50,7 @@
      $hinweis = $_POST["btSetPoint"];
      $breite = $_POST["latitude"];
      $laenge = $_POST["longitude"];
+     $SpName = $_POST["gameTitle"];
 
      $insertData =  "INSERT INTO $SpName (Hinweis, Breitengrad, Laengengrad, Entdeckt)
      VALUES ('$hinweis', '$breite', '$laenge', FALSE)";
@@ -64,6 +62,8 @@
      }
    }
     if(isset($_POST["btPublish"])){
+      $SpName = $_POST["gameTitleSec"];
+
       $sql ="UPDATE basis SET Oeffentlich=TRUE WHERE Spielname = '$SpName'";
 
       if ($conn->query($sql) === TRUE) {
@@ -80,8 +80,9 @@
       <div class="overlay-content">
         <form action="/CreateGame.php" method="post">
              <p></p>
-             <input type="text" id="longitude" name="longitude" />
-             <input type="text" id="latitude" name="latitude" />
+             <input type="hidden" id="longitude" name="longitude" />
+             <input type="hidden" id="latitude" name="latitude" />
+             <input type="hidden" id="gameTitle" name="gameTitle" />
              <input type="text" id="btSetPoint" class="form-control" name="btSetPoint"  placeholder="Geben Sie einen Hinweis" required autofocus>
             <p></p>
            <button class="btn btn-lg btn-primary btn-block" type="submit">Punkt setzen</button>
@@ -94,31 +95,39 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeSaveOv()">&times;</a>
       <div class="overlay-content">
         <form action="/CreateGame.php" method="post">
+
+          <input type="hidden" id="gameTitleSec" name="gameTitleSec" />
              <p style="color:white; font-size:160%; text-align:center">Wollen Sie das Spiel veröffentlichen?</p>
             <p></p>
-           <button name="btPublish" class="btn btn-lg btn-primary btn-block" type="submit">Speichern</button>
+           <button name="btPublish" class="btn btn-lg btn-primary btn-block" type="submit" onClick="publishGame()" >Veröffentlichen</button>
          </form>
       </div>
     </div>
 
 
     <div class="container">
-      <h1 align="center"><?= $SpName ?></h1>
+      <h1 align="center" id="myHeader"></h1>
             <button name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick=" getLocation(); openDia();">+</button>
             <p></p>
 
-              <button name="btSave" type="submit" class="btn btn-danger btn-circle btn-xl" onClick="openSaveOv()">
+              <button name="btSave" type="submit" class="btn btn-danger btn-circle btn-xl" onClick="openSaveOv(); postTitle();">
               <span class="glyphicon glyphicon-floppy-disk"></span>
               </button>
-              
+
 
       <p id="demo"></p>
 
       <script>
+        window.document.title = window.name;
+        myHeader.innerText = window.name;
 
+        function postTitle(){
+          document.getElementById("gameTitleSec").value =  window.name;
+        }
         function showPosition(position) {
              document.getElementById("latitude").value = position.coords.latitude;
              document.getElementById("longitude").value =  position.coords.longitude;
+             document.getElementById("gameTitle").value =  window.name;
          }
         function getLocation() {
          if (navigator.geolocation) {
@@ -126,6 +135,10 @@
           } else {
               x.innerHTML = "Geolocation is not supported by this browser.";
           }
+      }
+      function publishGame(){
+        window.alert("Das Spiel wurde erfolgreich veröffentlicht");
+        window.close('CreateGame.php');
       }
       </script>
 

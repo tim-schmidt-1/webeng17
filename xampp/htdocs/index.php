@@ -36,17 +36,8 @@ if(isset($_POST["SpielName"])){
     } else {
         echo "Error: " . $createTab . "<br>" . $conn->error;
     }
-//  "parent.location='CreateGame.html'";
 }
 
-//echo "Connected successfully";
-// Create database
-//$sql = "CREATE DATABASE myDBFlorian";
-//    echo "Database created successfully";
-//} else {
-//    echo "Error creating database: " . $conn->error;
-//}
-//background="town.jpg"
 ?>
 
  <!DOCTYPE html>
@@ -55,28 +46,19 @@ if(isset($_POST["SpielName"])){
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
      <meta name="description" content="">
      <meta name="author" content="">
      <link rel="icon" href="favicon.ico">
 
-     <title>WER</title>
+     <title>Paperchase</title>
 
-     <!-- Bootstrap-CSS -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
 
-     <!-- Besondere Stile für diese Vorlage -->
+
      <link href="signin.css" rel="stylesheet">
 
-     <!-- Nur für Testzwecke. Kopiere diese Zeilen nicht in echte Projekte! -->
-     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-     <script src="js/ie-emulation-modes-warning.js"></script>
 
-     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
-     <!--[if lt IE 9]>
-       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-     <![endif]    "-->
+     <script src="js/ie-emulation-modes-warning.js"></script>
 
     <link rel="stylesheet" type="text/css" href="overlayStyle.css">
 
@@ -97,12 +79,20 @@ if(isset($_POST["SpielName"])){
        <p></p>
        <input type="password" id="eingabefeldPasswort" class="form-control" name="Passwort" placeholder="Passwort">
        <p></p>
-       <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="createGame()">Speichern</button>
+       <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="openCreateGame()">Speichern</button>
      </form>
   </div>
 </div>
 <!-- End overlay -->
 
+<script>
+function openCreateGame(){
+    var gameName = document.getElementById("SpielName").value;
+    if( gameName != ''){
+    var myWin =   window.open('CreateGame.php', gameName);
+    }
+}
+</script>
 
 <!-- Second overlay -->
 <div id="searchBar" class="overlay">
@@ -111,7 +101,7 @@ if(isset($_POST["SpielName"])){
     <form action="/hunter.php" method="post">
        <input type="text" id="GesSpiel" class="form-control" name="GesSpiel"  placeholder="Spiel suchen" required autofocus>
        <p></p>
-       <input type="password" id="GesuchtesPasswort" class="form-control" name="GesuchtesPasswort" placeholder="Passwort">
+       <input type="password" id="GesuchtesPasswort" class="form-control" name="GesuchtesPasswort" placeholder="Passwort" required autofocus>
        <p></p>
        <button class="btn btn-lg btn-primary btn-block" type="submit">Betreten</button>
      </form>
@@ -124,7 +114,7 @@ if(isset($_POST["SpielName"])){
         <button class="btn btn-lg btn-primary btn-block" onclick="openNav()">Spiel erstellen</button>
         <button class="btn btn-lg btn-primary btn-block" onclick="openSearchBar()">Spiel beitreten</button>
 
-       </div> <!-- /container -->
+       </div>
 
 </body>
 </html>
