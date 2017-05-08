@@ -432,3 +432,97 @@
 17:15:37  [main] 	Deinitialisiere Module
 17:15:37  [main] 	Deinitialisiere Control Panel
 
+20:28:18  [main] 	Initialisere Control Panel
+20:28:18  [main] 	Windows Version: Windows 7 Professional SP1 64-bit
+20:28:18  [main] 	XAMPP Version: 5.6.30
+20:28:18  [main] 	Control Panel Version: 3.2.2  [ Compiled: Nov 12th 2015 ]
+20:28:18  [main] 	Mit Administratorrechten gestartet - gut!
+20:28:18  [main] 	XAMPP Installationsverzeichnis: "c:\users\ibm_admin\desktop\dh\4. semester\webengineering\gitcode\webeng17\xampp\"
+20:28:18  [main] 	ACHTUNG: Der XAMPP Installationspfad enthält Leerzeichen. Dies könnte die Funktionalität von Programmen/Scripten beeinflussen
+20:28:18  [main] 	Voraussetzungen werden geprüft
+20:28:23  [main] 	Alle Voraussetzungen sind erfüllt
+20:28:23  [main] 	Initialisiere Module
+20:28:23  [mysql] 	Problem festgestellt!
+20:28:23  [mysql] 	Port 3306 in Benutzung von ""C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqld.exe" --defaults-file="C:\ProgramData\MySQL\MySQL Server 5.7\my.ini" MySQL57"!
+20:28:23  [mysql] 	MySQL wird NICHT starten, wenn die konfigurierten Ports nicht frei sind!
+20:28:23  [mysql] 	Die blockierende Anwendung muss deinstalliert/deaktiviert/rekonfiguriert werden oder
+20:28:23  [mysql] 	MySQL und das Control Panel müssen auf einen anderen Port zu lauschen
+20:28:23  [main] 	Starte Check-Timer
+20:28:23  [main] 	Control Panel bereit
+20:28:25  [Apache] 	Versuche Apache zu starten...
+20:28:32  [Apache] 	Statusänderung erkannt: gestartet
+20:40:48  [Apache] 	stoppe Modul Apache (PID: 2892)
+20:40:48  [Apache] 	stoppe Modul Apache (PID: 2344)
+20:40:48  [Apache] 	Statusänderung erkannt: gestoppt
+20:40:51  [Apache] 	Versuche Apache zu starten...
+20:40:51  [Apache] 	Statusänderung erkannt: gestartet
+17:02:28  [Apache] 	stoppe Modul Apache (PID: 2824)
+17:02:28  [Apache] 	stoppe Modul Apache (PID: 6376)
+17:02:29  [Apache] 	Statusänderung erkannt: gestoppt
+17:03:05  [Apache] 	Versuche Apache zu starten...
+17:03:06  [Apache] 	Statusänderung erkannt: gestartet
+17:07:28  [Apache] 	stoppe Modul Apache (PID: 10672)
+17:07:28  [Apache] 	stoppe Modul Apache (PID: 1196)
+17:07:29  [Apache] 	Statusänderung erkannt: gestoppt
+17:07:29  [Apache] 	Versuche Apache zu starten...
+17:07:30  [Apache] 	Statusänderung erkannt: gestartet
+17:07:36  [Apache] 	stoppe Modul Apache (PID: 8784)
+17:07:36  [Apache] 	stoppe Modul Apache (PID: 2856)
+17:07:36  [Apache] 	Statusänderung erkannt: gestoppt
+17:07:42  [Apache] 	Versuche Apache zu starten...
+17:07:42  [Apache] 	Statusänderung erkannt: gestartet
+17:23:33  [Apache] 	stoppe Modul Apache (PID: 10732)
+17:23:33  [Apache] 	stoppe Modul Apache (PID: 8476)
+17:23:33  [Apache] 	Statusänderung erkannt: gestoppt
+17:23:37  [Apache] 	Versuche Apache zu starten...
+17:23:37  [Apache] 	Statusänderung erkannt: gestartet
+17:26:36  [Apache] 	stoppe Modul Apache (PID: 1044)
+17:26:36  [Apache] 	stoppe Modul Apache (PID: 10184)
+17:26:36  [Apache] 	Statusänderung erkannt: gestoppt
+17:27:49  [Apache] 	Versuche Apache zu starten...
+17:27:49  [Apache] 	Statusänderung erkannt: gestartet
+00:55:59  [Apache] 	Statusänderung erkannt: gestoppt
+00:55:59  [Apache] 	Fehler: Apache wurde unerwartet beendet
+00:55:59  [Apache] 	Ursache könnte ein geblockter Port, fehlende Abhängigkeiten,
+00:55:59  [Apache] 	fehlende Berechtigungen, ein Absturz oder ein Abbruch einer anderen Methode sein.
+00:55:59  [Apache] 	Drücke den Logs Button um error logs zu sehen und prüfe
+00:55:59  [Apache] 	im Windows Event Viewer für weitere Hinweise
+00:55:59  [Apache] 	Wenn du weitere Hilfe benötigst, kopiere den kompletten Inhalt des Log Fensters
+00:55:59  [Apache] 	und füge ihn als Ergänzung in einem neuen Forum Eintrag hinzu.
+00:56:18  [main] 	Deinitialisiere Module
+00:56:18  [main] 	Deinitialisiere Control Panel
+
+14:54:25  [main] 	Initialisere Control Panel
+14:54:25  [main] 	Windows Version: Windows 7 Professional SP1 64-bit
+14:54:25  [main] 	XAMPP Version: 5.6.30
+14:54:25  [main] 	Control Panel Version: 3.2.2  [ Compiled: Nov 12th 2015 ]
+14:54:25  [main] 	Mit Administratorrechten gestartet - gut!
+14:54:25  [main] 	XAMPP Installationsverzeichnis: "c:\users\ibm_admin\desktop\dh\4. semester\webengineering\gitcode\webeng17\xampp\"
+14:54:25  [main] 	ACHTUNG: Der XAMPP Installationspfad enthält Leerzeichen. Dies könnte die Funktionalität von Programmen/Scripten beeinflussen
+14:54:25  [main] 	Voraussetzungen werden geprüft
+14:54:30  [main] 	Alle Voraussetzungen sind erfüllt
+14:54:30  [main] 	Initialisiere Module
+14:54:30  [main] 	Starte Check-Timer
+14:54:30  [main] 	Control Panel bereit
+14:54:32  [Apache] 	Versuche Apache zu starten...
+14:54:39  [Apache] 	Statusänderung erkannt: gestartet
+15:10:42  [Apache] 	stoppe Modul Apache (PID: 7272)
+15:10:42  [Apache] 	stoppe Modul Apache (PID: 7260)
+15:10:42  [Apache] 	Statusänderung erkannt: gestoppt
+20:28:32  [Apache] 	Statusänderung erkannt: gestartet
+20:40:48  [Apache] 	Statusänderung erkannt: gestoppt
+20:40:51  [Apache] 	Statusänderung erkannt: gestartet
+17:02:29  [Apache] 	Statusänderung erkannt: gestoppt
+17:03:06  [Apache] 	Statusänderung erkannt: gestartet
+17:07:29  [Apache] 	Statusänderung erkannt: gestoppt
+17:07:30  [Apache] 	Statusänderung erkannt: gestartet
+17:07:36  [Apache] 	Statusänderung erkannt: gestoppt
+17:07:42  [Apache] 	Statusänderung erkannt: gestartet
+17:23:33  [Apache] 	Statusänderung erkannt: gestoppt
+17:23:37  [Apache] 	Statusänderung erkannt: gestartet
+17:26:36  [Apache] 	Statusänderung erkannt: gestoppt
+17:27:49  [Apache] 	Statusänderung erkannt: gestartet
+00:55:59  [Apache] 	Statusänderung erkannt: gestoppt
+00:56:21  [main] 	Deinitialisiere Module
+00:56:21  [main] 	Deinitialisiere Control Panel
+
