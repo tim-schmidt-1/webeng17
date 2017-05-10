@@ -37,6 +37,14 @@ if(isset($_POST["SpielName"])){
         echo "Error: " . $createTab . "<br>" . $conn->error;
     }
 }
+  $emparray = array();
+
+  $sql = "SELECT Spielname, Passwort FROM basis";
+  $result = $conn->query($sql);
+  while($row =mysqli_fetch_assoc($result))
+  {
+      $emparray[] = $row;
+  }
 
 ?>
 
@@ -92,18 +100,35 @@ function openCreateGame(){
     var myWin =   window.open('CreateGame.php', gameName);
     }
 }
+
+
+function openHunter(){
+    var allGames = <?php echo json_encode($emparray)?>;
+    var gameName = document.getElementById("GesSpiel").value;
+    var gamePw = document.getElementById("GesuchtesPasswort").value;
+
+    for(var i = 0; i < allGames.length; i++){
+
+      if(gameName == allGames[i].Spielname && gamePw == allGames[i].Passwort){
+          var myWin =   window.open('hunter.php', gameName);
+      }
+      else{
+        //Wrong password or gamename
+      }
+    }
+}
 </script>
 
 <!-- Second overlay -->
 <div id="searchBar" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick=" closeSearchBar()">&times;</a>
   <div class="overlay-content">
-    <form action="/hunter.php" method="post">
+    <form action="/index.php" method="post">
        <input type="text" id="GesSpiel" class="form-control" name="GesSpiel"  placeholder="Spiel suchen" required autofocus>
        <p></p>
-       <input type="password" id="GesuchtesPasswort" class="form-control" name="GesuchtesPasswort" placeholder="Passwort" required autofocus>
+       <input type="password" id="GesuchtesPasswort" class="form-control" name="GesuchtesPasswort" placeholder="Passwort">
        <p></p>
-       <button class="btn btn-lg btn-primary btn-block" type="submit">Betreten</button>
+       <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="openHunter()">Betreten</button>
      </form>
   </div>
 </div>
@@ -113,8 +138,7 @@ function openCreateGame(){
         <p></p>
         <button class="btn btn-lg btn-primary btn-block" onclick="openNav()">Spiel erstellen</button>
         <button class="btn btn-lg btn-primary btn-block" onclick="openSearchBar()">Spiel beitreten</button>
-
-       </div>
+  </div>
 
 </body>
 </html>

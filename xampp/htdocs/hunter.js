@@ -28,7 +28,7 @@ var img = null,
   var ziel;
 
 function endgame(){
-  alert("No more Points, games has endet.");
+  alert("No more Points, games has ended.");
 	//endgame message back to index?
 }
 
