@@ -7,8 +7,8 @@ var img = null,
   z=0, //ziel des zeigers
 	os=0, //entfernung s von 0 grad
 	oz=0,//entfernung z von 0 grad
-	posx=0, //Eigene Position latitude
-	posy=0,  //Eigene Position longitude
+	posx=0.0, //Eigene Position latitude
+	posy=0.0,  //Eigene Position longitude
 	zielx=0, //Ziel Position latitude
 	ziely=0,  //Ziel Position longitude
 	entf=0, //Entfernung zum Ziel
@@ -28,7 +28,7 @@ var img = null,
   var ziel;
 
 function endgame(){
-  alert("No more Points, games has endet.");
+  console.log("No more Points, games has ended.");
 	//endgame message back to index?
 }
 
@@ -39,8 +39,14 @@ function getNextPoint(){
   var currenty = ydb.pop();
   currentcomment = cdb.pop();
 
-  ziel = "{lat: "+currentx+", lng: "+currenty+"}";
-console.log("Neues Ziel geladen: " +ziel);
+	console.log("Neues Ziel geladen: " + currentx + ", " + currenty);
+
+	if (currentx==null||currenty==null){
+		return false;
+		endgame();
+	}
+  ziel = {lat: currentx, lng: currenty};
+	return true;
   /**
   if (x && y && c){
     ziel = "{lat: "+x+", lng: "+y+"}";
@@ -51,7 +57,8 @@ console.log("Neues Ziel geladen: " +ziel);
    return false;
  }
  **/
-}
+
+ }
 
 function loadData(){
 
@@ -74,16 +81,22 @@ function loadData(){
 }
 
 function switchmode(){
+	console.log("mode: " + mode);
   if (mode=="m"){
     mode="c";
     setModeCompass();
-  } else {
+  } else if (mode=="c"){
     mode="m";
     setModeMap();
-  }
+  } else {
+		console.log("Mode is not properly set");
+	}
 
 }
 
+function setTitle(){
+	document.getElementById("place").value =  window.name;
+}
 
 
 function initCompass() {
@@ -110,20 +123,21 @@ function initCompass() {
 		img.src = 'compass.png';
 		img.onload = imgLoaded;
 	} else {
-		alert("Canvas not supported!");
+		console.log("Canvas not supported!");
 	}
 }
 
 
 function setModeCompass(){
 
+		console.log("setmodecompass");
 		if(getNextPoint()){
 		document.getElementById('navigation').style.visibility='visible';
 		document.getElementById('navigation').style.height='50%';
 		document.getElementById('navigation').style.width='50%';
-		document.getElementById('navigation2').style.visibility='hidden';
-		document.getElementById('navigation2').style.height='0';
-		document.getElementById('navigation2').style.width='0';
+		document.getElementById('googlemap').style.visibility='hidden';
+		document.getElementById('googlemap').style.height='0';
+		document.getElementById('googlemap').style.width='0';
 	}
 }
 
@@ -137,9 +151,13 @@ function updateCompass() {
 	// funktioniert um 0 noch nicht so gut bzw mindestes um 0 nuícht
 
   //auf 3 nachkommastellen muss es passen der rest ist egal
-  if (Math.abs(ziel.lat-position.coords.latitude)<0.001 && Math.abs(ziel.lng-position.coords.longitude)<0.001){
 
-    alert("Ziel auf der Karte erreicht");
+		console.log(ziel.lat + " - " + posx + " , " + ziel.lng + " - " + posy);
+		console.log("div: " + Math.abs(ziel.lat-posx) + ", "+ Math.abs(ziel.lng-posy));
+
+  if (Math.abs(ziel.lat-posx)<0.001 && Math.abs(ziel.lng-posy)<0.001){
+
+    console.log("Ziel Kompass erreicht");
     switchmode();
   }
 
@@ -217,29 +235,29 @@ function calccoordwinkel(){
 	console.log('xdif = ' + xdif + ' , ydif = ' + ydif);
 
 	//quardanten im uhrzeigersinn von oben rechts=1 bis oben links=4
-	if(ydif>0){ // ziel ist in oberen quardanten
-		if(xdif>0){ // ziel ist in rechten quardanten - Q1
+	if(ydif>0.0){ // ziel ist in oberen quardanten
+		if(xdif>0.0){ // ziel ist in rechten quardanten - Q1
 			console.log('Quadrant 1');
 			var x = Math.atan(xdif/ydif)*(180/Math.PI); // winkel von x Achse zu geraden die auf Ziel Zeitg in rad , *(180/Math.PI) wandelt das in Grad um
 			return 90-x;
-		} else if(xdif<0){ //ziel ist in linken Quadranten - Q4
+		} else if(xdif<0.0){ //ziel ist in linken Quadranten - Q4
 			console.log('Quadrant 4');
 			var x = Math.atan(ydif/(-xdif))*(180/Math.PI);;
-			return 270+x;
+			return 270.0+x;
 		} else { //ziel liegt auf gleicher breite
 			return 0;
 		}
-	} else if(ydif<0){ //ziel ist in unterem Quadranten
-		if(xdif>0){ // ziel ist in rechtem quardanten - Q2
+	} else if(ydif<0.0){ //ziel ist in unterem Quadranten
+		if(xdif>0.0){ // ziel ist in rechtem quardanten - Q2
 			console.log('Quadrant 2');
 			var x = Math.atan((-ydif)/xdif)*(180/Math.PI);;
-			return 90+x;
-		} else if(xdif<0){ //ziel ist in linken Quadranten - Q3
+			return 90.0+x;
+		} else if(xdif<0.0){ //ziel ist in linken Quadranten - Q3
 			console.log('Quadrant 3');
-			var x = Math.atan((-xdif)/(-ydif))*(180/Math.PI);;
-			return 270-x;
+			var x = Math.atan((-xdif)/(-ydif))*(180.0/Math.PI);;
+			return 270.0-x;
 		} else { //ziel liegt auf gleicher breite
-			return 180;
+			return 180.0;
 		}
 	} else { //ziel liegt auf gleicher höhe
 		console.log('same height');
@@ -263,7 +281,7 @@ function imgLoaded() {
 		ctx.drawImage(needle, -100, -100);
 		ctx.restore();
 
-	setInterval(updateCompass, 100);
+//	setInterval(updateCompass, 100);
 }
 
 function activateOrientationListener(){
@@ -286,6 +304,7 @@ function activateOrientationListener(){
 
 							console.log('The goal of the compass needle is ' + zielwinkel);
 							z=zielwinkel;
+							updateCompass();
 						}
           }, false);
 
@@ -311,13 +330,14 @@ function initMap() {
 
 function setModeMap(){
 
+			console.log("setmodemap");
 			if(getNextPoint()){
 			document.getElementById('navigation').style.visibility='hidden';
 			document.getElementById('navigation').style.height='0';
 			document.getElementById('navigation').style.width='0';
-			document.getElementById('navigation2').style.visibility='visible';
-			document.getElementById('navigation2').style.height='50%';
-			document.getElementById('navigation2').style.width='50%';
+			document.getElementById('googlemap').style.visibility='visible';
+			document.getElementById('googlemap').style.height='200';
+			document.getElementById('googlemap').style.width='200';
 		}
 }
 
@@ -328,18 +348,16 @@ function successCallbackMap(position) {
 		posx=position.coords.latitude;
 		posy=position.coords.longitude;
 
-    alert("Der Standort der zugewiesen wird ist: " + {lat: position.coords.latitude, lng: position.coords.longitude};
-
-
+		    console.log("Aktueller Standort: " + posx + ", " +posy);
 		var markerArray = [];
 
 		// Instantiate a directions service.
 		var directionsService = new google.maps.DirectionsService;
 
 		// Create a map and center it on Manhattan.
-		var map = new google.maps.Map(document.getElementById('navigation2'), {
+		var map = new google.maps.Map(document.getElementById('googlemap'), {
 			zoom: 13,
-			center: {lat: position.coords.latitude, lng: position.coords.longitude};
+			center: {lat: position.coords.latitude, lng: position.coords.longitude}
 		});
 
 		// Create a renderer for directions and bind it to the map.
@@ -365,7 +383,7 @@ function calculateAndDisplayRoute(directionsDisplay, directionsService, markerAr
 	// Retrieve the start and end locations and create a DirectionsRequest using
 	// WALKING directions.
 	directionsService.route({
-		origin: {lat: position.coords.latitude, lng: position.coords.longitude},
+		origin: {lat: posx, lng: posy},
 		destination: ziel,
 		travelMode: 'WALKING'
 	}, function(response, status) {
@@ -374,7 +392,7 @@ function calculateAndDisplayRoute(directionsDisplay, directionsService, markerAr
 	if (status === 'OK') {
 		directionsDisplay.setDirections(response);
 	} else {
-		window.alert('Directions request failed due to ' + status);
+		console.log('Directions request failed due to ' + status);
 	}
 	});
 }
