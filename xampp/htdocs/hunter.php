@@ -47,7 +47,6 @@
 
      <div><h1 align="center" id="myHeader"></h1>
 
-
        <script>
        window.document.title = window.name;
        myHeader.innerText = window.name;
@@ -64,9 +63,9 @@
 <p><a onclick="setModeMap()" href="#">Map</a></p>
 <p><a onclick="setModeCompass()" href="#">Compass</a></p>
 
-  <!-- hier alle Hinweise auslesen + Koordinaten -->
+  <!-- hier alle Hinweise auslesen + Koordinaten  -->
   <form action="/hunter.php" method="post">
-   <button class="btn btn-lg btn-primary btn-block" type="submit" onClick="setTitle()">Spiel starten</button>
+   <button class="btn btn-lg btn-primary btn-block" type="submit">Spiel starten</button>
    <input type="hidden" id="place" name="place" />
  </form>
  <script>document.getElementById("place").value =  window.name;
