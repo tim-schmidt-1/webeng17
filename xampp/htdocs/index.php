@@ -140,6 +140,6 @@ function openHunter(){
         <button class="btn btn-lg btn-primary btn-block" onclick="openNav()">Spiel erstellen</button>
         <button class="btn btn-lg btn-primary btn-block" onclick="openSearchBar()">Spiel beitreten</button>
   </div>
-
+<div id="datapoints" style="visibility:hidden">{test,eins,zwei,drei}</div>
 </body>
 </html>
