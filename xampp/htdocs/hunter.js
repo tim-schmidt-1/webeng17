@@ -39,12 +39,12 @@ function getNextPoint(){
   var currenty = ydb.pop();
   currentcomment = cdb.pop();
 
+	if (currentx==null){
+		endgame();
+		return false;
+	}
 	console.log("Neues Ziel geladen: " + currentx + ", " + currenty);
 
-	if (currentx==null||currenty==null){
-		return false;
-		endgame();
-	}
   ziel = {lat: currentx, lng: currenty};
 	return true;
   /**
@@ -61,21 +61,31 @@ function getNextPoint(){
  }
 
 function loadData(){
-  xdb.unshift(49.4743855);
-  ydb.unshift(8.4859386);
-  cdb.unshift("Comment 1");
 
-  xdb.unshift(49.4763855);
-  ydb.unshift(8.4879386);
-  cdb.unshift("Comment 2");
+	var datapoints = JSON.parse('[{"Hinweis":"gerade","Breitengrad":"49.414878599999994","Laengengrad":"8.6724602"},{"Hinweis":"rechts","Breitengrad":"49.4147299","Laengengrad":"8.672346"}]');
 
-  xdb.unshift(49.4763855);
-  ydb.unshift(8.4909386);
-  cdb.unshift("Comment 3");
+for (i in datapoints) {
+  	xdb.unshift(parseFloat(datapoints[i].Breitengrad));
+		console.log(datapoints[i].Breitengrad);
+	  ydb.unshift(parseFloat(datapoints[i].Laengengrad));
+		console.log(datapoints[i].Laengengrad);
+	  cdb.unshift(parseFloat(datapoints[i].Hinweis));
+		console.log(datapoints[i].Hinweis);
+}
+  //xdb.unshift(49.4743855);
+//  cdb.unshift("Comment 1");
 
-  xdb.unshift(49.4743855);
-  ydb.unshift(8.4909386);
-  cdb.unshift("Comment 4");
+  //xdb.unshift(49.4763855);
+  //ydb.unshift(8.4879386);
+  //cdb.unshift("Comment 2");
+
+  //xdb.unshift(49.4763855);
+  //ydb.unshift(8.4909386);
+  //cdb.unshift("Comment 3");
+
+  //xdb.unshift(49.4743855);
+  //ydb.unshift(8.4909386);
+  //cdb.unshift("Comment 4");
 }
 
 function switchmode(){
