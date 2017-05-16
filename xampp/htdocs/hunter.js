@@ -61,7 +61,6 @@ function getNextPoint(){
  }
 
 function loadData(){
-
   xdb.unshift(49.4743855);
   ydb.unshift(8.4859386);
   cdb.unshift("Comment 1");
@@ -77,7 +76,6 @@ function loadData(){
   xdb.unshift(49.4743855);
   ydb.unshift(8.4909386);
   cdb.unshift("Comment 4");
-
 }
 
 function switchmode(){
