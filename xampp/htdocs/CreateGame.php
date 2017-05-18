@@ -56,9 +56,9 @@
      VALUES ('$hinweis', '$breite', '$laenge', FALSE)";
 
      if ($conn->query($insertData) === TRUE) {
-        echo "Good";
+        echo "Der Punkt wurde gesetzt";
      } else {
-         echo "Error: " . $insertData . "<br>" . $conn->error;
+         echo "Error: Bitte setzten Sie den Punkt erneut";
      }
    }
     if(isset($_POST["btPublish"])){
@@ -73,7 +73,7 @@
       }
     }
 ?>
-  <body>
+  <body background = "map.jpg">
     <!--Overlay -->
     <div id="dia" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -99,18 +99,23 @@
           <input type="hidden" id="gameTitleSec" name="gameTitleSec" />
              <p style="color:white; font-size:160%; text-align:center">Wollen Sie das Spiel veröffentlichen?</p>
             <p></p>
-           <button name="btPublish" class="btn btn-lg btn-primary btn-block" type="submit" onClick="publishGame()" >Veröffentlichen</button>
+           <button name="btPublish" class="btn btn-lg btn-primary btn-block" type="submit" onClick="publishGame()">Veröffentlichen</button>
          </form>
       </div>
     </div>
 
 
     <div class="container">
-      <h1 align="center" id="myHeader"></h1>
-            <button name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick=" getLocation(); openDia();">+</button>
+      <h1 align="center" id="myHeader" style="background-color:white"></h1>
+          <picture>
+            <source srcset="platzhalter.jpg" media="(min-width: 300px)">
+              <img src="platzhalter.jpg" alt ="Platzhalter" style="width:auto;">
+            </picture>
             <p></p>
-
-              <button name="btSave" type="submit" class="btn btn-danger btn-circle btn-xl" onClick="openSaveOv(); postTitle();">
+            <span style="Display:inline-block; width:20%;"></span>
+            <button name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick=" getLocation(); openDia();">+</button>
+            <span style="Display:inline-block; width:20%;"></span>
+                <button name="btSave" type="submit" class="btn btn-danger btn-circle btn-xl" onClick="openSaveOv(); postTitle();">
               <span class="glyphicon glyphicon-floppy-disk"></span>
               </button>
 

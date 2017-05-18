@@ -5,25 +5,36 @@ $username = "user1";
 $password = "Test123";
 $dbName = "mydbflorian";
 // Create connection
-
 $conn = new mysqli($servername, $username, $password, $dbName );
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$emparray = array();
+
+$sql = "SELECT Spielname, Passwort FROM basis";
+$result = $conn->query($sql);
+while($row =mysqli_fetch_assoc($result))
+{
+    $emparray[] = $row;
+}
+
 //Create game
-if(isset($_POST["SpielName"])){
+if(isset($_POST["SpielName"]) && $_POST["SpielName"] != "basis"){
   //Entry in basis-tab
   $spielName = $_POST["SpielName"];
   $passwort = $_POST["Passwort"];
+
   $sql = "INSERT INTO Basis (Spielname, Passwort, Oeffentlich)
   VALUES ('$spielName', '$passwort', FALSE)";
   if ($conn->query($sql) === TRUE) {
     //  echo "New record created successfully";
   } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
+     echo "Error: " . $sql . "<br>" . $conn->error;
   }
+
+
   $createTab = "CREATE TABLE $spielName (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   Hinweis VARCHAR(150),
@@ -34,18 +45,15 @@ if(isset($_POST["SpielName"])){
     if ($conn->query($createTab) === TRUE) {
       //  echo "New Tab";
     } else {
-        echo "Error: " . $createTab . "<br>" . $conn->error;
+        // Lösche letzten Eintrag aus Basis-Tabelle, da dieser falsch war
+        $del = "DELETE FROM Basis ORDER BY id desc limit 1";
+        if ($conn->query($del) === TRUE) {
+          //  echo "Letzter Eintrag wurde gelöscht";
+        } else {
+           echo "Error: " . $sql . "<br>" . $conn->error;
+        }
     }
 }
-  $emparray = array();
-
-  $sql = "SELECT Spielname, Passwort FROM basis";
-  $result = $conn->query($sql);
-  while($row =mysqli_fetch_assoc($result))
-  {
-      $emparray[] = $row;
-  }
-
 ?>
 
  <!DOCTYPE html>
@@ -78,7 +86,7 @@ if(isset($_POST["SpielName"])){
 <body background="town.jpg">
 
 
-<!-- The overlay -->
+<!-- The overlay-->
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -94,16 +102,46 @@ if(isset($_POST["SpielName"])){
 <!-- End overlay -->
 
 <script>
+var allGames = <?php echo json_encode($emparray)?>;
+
+function checkForValue(json, value, suffix) {
+    for (var i = 0; i < json.length; i++){
+      if(json[i].suffix == value){
+        return true;
+      }
+      else{
+        false;
+      }
+    }
+}
 function openCreateGame(){
+   var checkValue = false;
     var gameName = document.getElementById("SpielName").value;
-    if( gameName != ''){
+    //check if name of game already exists
+    for (var i = 0; i < allGames.length; i++){
+      if(allGames[i].Spielname == gameName){
+        checkValue = true;
+        break;
+      }
+      else{
+        checkValue = false;
+      }
+    }
+
+    if(gameName != '' && gameName != "basis" && checkValue ==false){
     var myWin =   window.open('CreateGame.php', gameName);
+    }
+    else{
+      window.alert("Das Spiel kann nicht "+ gameName +" genannt werden");
+    }{
+
+
     }
 }
 
 
 function openHunter(){
-    var allGames = <?php echo json_encode($emparray)?>;
+
     var gameName = document.getElementById("GesSpiel").value;
     var gamePw = document.getElementById("GesuchtesPasswort").value;
 
