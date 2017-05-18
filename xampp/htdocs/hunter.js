@@ -62,16 +62,13 @@ function getNextPoint(){
 
 function loadData(){
 
-	var datapoints = JSON.parse('[{"Hinweis":"gerade","Breitengrad":"49.414878599999994","Laengengrad":"8.6724602"},{"Hinweis":"rechts","Breitengrad":"49.4147299","Laengengrad":"8.672346"}]');
+	var datapoints = JSON.parse('[{"Hinweis":"h1","Breitengrad":"49.414878599999994","Laengengrad":"8.6724602"},{"Hinweis":"h2","Breitengrad":"49.4147299","Laengengrad":"8.672346"}]');
 
-for (i in datapoints) {
+	for (i in datapoints) {
   	xdb.unshift(parseFloat(datapoints[i].Breitengrad));
-		console.log(datapoints[i].Breitengrad);
 	  ydb.unshift(parseFloat(datapoints[i].Laengengrad));
-		console.log(datapoints[i].Laengengrad);
 	  cdb.unshift(parseFloat(datapoints[i].Hinweis));
-		console.log(datapoints[i].Hinweis);
-}
+	}
   //xdb.unshift(49.4743855);
 //  cdb.unshift("Comment 1");
 
@@ -155,9 +152,6 @@ function clearCanvas() {
 }
 
 function updateCompass() {
-	// todo
-	// funktioniert um 0 noch nicht so gut bzw mindestes um 0 nuícht
-
   //auf 3 nachkommastellen muss es passen der rest ist egal
 
 		console.log(ziel.lat + " - " + posx + " , " + ziel.lng + " - " + posy);
@@ -169,7 +163,7 @@ function updateCompass() {
     switchmode();
   }
 
-	document.getElementById("info").innerHTML = "Aktuelle Position:" + posx + " - " + posy;
+	//document.getElementById("info").innerHTML = "Aktuelle Position:" + posx + " - " + posy;
 
 
 
@@ -193,7 +187,6 @@ function updateCompass() {
 			// nadel um 5 Grad in richtige richtung
 			s = (s+richtung*5)%360;
 		  if(s<=0) s = 360-s;
-
 
 	clearCanvas();
 
@@ -321,18 +314,14 @@ function activateOrientationListener(){
 	}
 }
 
-
-
 function initMap() {
 	console.log("initmap wurde aufgerufen");
 	if (navigator && navigator.geolocation) {
-	document.getElementById("info").innerHTML = "Geolocation is supported";
-	var watchId = navigator.geolocation.watchPosition(successCallbackMap,
-																											errorCallbackMap,
-																											{enableHighAccuracy:true,timeout:60000,maximumAge:0});
+//	document.getElementById("info").innerHTML = "Geolocation is supported";
+	var watchId = navigator.geolocation.watchPosition(successCallbackMap,errorCallbackMap,{enableHighAccuracy:true,timeout:60000,maximumAge:0});
 	} else {
 		console.log('Geolocation is not supported');
-		document.getElementById("info").innerHTML = "Geolocation is not supported";
+//		document.getElementById("info").innerHTML = "Geolocation is not supported";
 	}
 }
 
@@ -349,7 +338,10 @@ function setModeMap(){
 		}
 }
 
-function errorCallbackMap() {}
+function errorCallbackMap() {
+	console.log("ERRORCALLBACK");
+	console.log("ERRORCALLBACK");
+}
 
 function successCallbackMap(position) {
 		console.log("sucesscallback for map was called");
@@ -384,6 +376,7 @@ function successCallbackMap(position) {
 
 function calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map) {
 	// First, remove any existing markers from the map.
+
 	for (var i = 0; i < markerArray.length; i++) {
 		markerArray[i].setMap(null);
 	}

@@ -44,7 +44,7 @@
     <script src="/hunter.js"></script>
    </head>
 
-   <body onload="loadData();setModeMap();initMap();initCompass();">
+   <body background="town.jpg" onload="loadData();initMap();setModeMap();initCompass();">
 
      <div><h1 align="center" id="myHeader"></h1>
 
@@ -55,16 +55,16 @@
        </script>
 
      </div>
-
+<center>
 	<canvas class="navigation" id="navigation" width="200" height="200"></canvas>
 	<div class="navigation" id="googlemap" width="200" height="200"></div>
+</center>
 
-
-
+<!--
 <p id="info">---</p>
 <p><a onclick="setModeMap()" href="#">Map</a></p>
 <p><a onclick="setModeCompass()" href="#">Compass</a></p>
-
+-->
 <!-- hier alle Hinweise auslesen + Koordinaten
 
   <form action="/hunter.php" method="post">
