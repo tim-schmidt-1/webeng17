@@ -60,7 +60,7 @@
 </center>
 
 <!--
-<p id="info">---</p>
+<p id="info">--</p>
 <p><a onclick="setModeMap()" href="#">Map</a></p>
 <p><a onclick="setModeCompass()" href="#">Compass</a></p>
 -->

@@ -144,10 +144,15 @@ function openHunter(){
     var gameName = document.getElementById("GesSpiel").value;
     var gamePw = document.getElementById("GesuchtesPasswort").value;
 
+
     for(var i = 0; i < allGames.length; i++){
 
       if(gameName == allGames[i].Spielname && gamePw == allGames[i].Passwort){
           var myWin =   window.open('hunter.php', gameName);
+          break;
+      }
+      else if(!(gameName == allGames[i].Spielname && gamePw == allGames[i].Passwort) && i == allGames.length - 1 ){
+        window.alert("Spielname oder Passwort ist falsch");
       }
       else{
         //Wrong password or gamename

@@ -68,6 +68,9 @@ function loadData(){
   	xdb.unshift(parseFloat(datapoints[i].Breitengrad));
 	  ydb.unshift(parseFloat(datapoints[i].Laengengrad));
 	  cdb.unshift(parseFloat(datapoints[i].Hinweis));
+	  console.log(datapoints[i].Breitengrad);
+	  console.log(datapoints[i].Laengengrad);
+	  console.log(datapoints[i].Hinweis);
 	}
   //xdb.unshift(49.4743855);
 //  cdb.unshift("Comment 1");

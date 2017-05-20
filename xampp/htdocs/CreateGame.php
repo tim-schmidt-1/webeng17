@@ -72,8 +72,9 @@
           echo "Error: " . $sql . "<br>" . $conn->error;
       }
     }
+
 ?>
-  <body background = "map.jpg">
+  <body onload = "getLocationM()" background = "map.jpg">
     <!--Overlay -->
     <div id="dia" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -107,22 +108,72 @@
 
     <div class="container">
       <h1 align="center" id="myHeader" style="background-color:white"></h1>
-          <picture>
+        <!--  <picture>
             <source srcset="platzhalter.jpg" media="(min-width: 300px)">
               <img src="platzhalter.jpg" alt ="Platzhalter" style="width:auto;">
             </picture>
+          -->
+            <div id="mapholder" style = "position: absolute; float: left; margin-left: 25%; width:24%; "></div>
             <p></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
             <span style="Display:inline-block; width:20%;"></span>
             <button name="btnPosition" class="btn btn-success btn-circle btn-xl" type="submit" onclick=" getLocation(); openDia();">+</button>
             <span style="Display:inline-block; width:20%;"></span>
                 <button name="btSave" type="submit" class="btn btn-danger btn-circle btn-xl" onClick="openSaveOv(); postTitle();">
               <span class="glyphicon glyphicon-floppy-disk"></span>
               </button>
-
-
       <p id="demo"></p>
+    </div>
 
       <script>
+      var x = document.getElementById("demo");
+      var y = document.getElementById("demo1");
+      var z = document.getElementById("demo2");
+      var p = 1;
+      function getLocationM() {
+
+          if (navigator.geolocation) {
+              navigator.geolocation.watchPosition(showPositionMap, showError);
+
+
+          } else {
+              x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+      }
+
+      function showPositionMap(position) {
+
+          var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+      	x.innerHTML = p++;
+      	y.innerHTML = position.coords.longitude; //Länge
+      	z.innerHTML = position.coords.latitude; //Breite
+
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=17&size=400x300&sensor=false&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    document.getElementById("mapholder").innerHTML = "<img alt='Karte' src='"+img_url+"'/>";
+      }
+      //To use this code on your website, get a free API key from Google.
+      //Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+
+      function showError(error) {
+          switch(error.code) {
+              case error.PERMISSION_DENIED:
+                  x.innerHTML = "User denied the request for Geolocation."
+                  break;
+              case error.POSITION_UNAVAILABLE:
+                  x.innerHTML = "Location information is unavailable."
+                  break;
+              case error.TIMEOUT:
+                  x.innerHTML = "The request to get user location timed out."
+                  break;
+              case error.UNKNOWN_ERROR:
+                  x.innerHTML = "An unknown error occurred."
+                  break;
+          }
+      }
+
         window.document.title = window.name;
         myHeader.innerText = window.name;
 
@@ -145,9 +196,10 @@
         window.alert("Das Spiel wurde erfolgreich veröffentlicht");
         window.close('CreateGame.php');
       }
+
       </script>
 
-  </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
