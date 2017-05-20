@@ -351,7 +351,7 @@ function successCallbackMap(position) {
 		posx=position.coords.latitude;
 		posy=position.coords.longitude;
 
-		    console.log("Aktueller Standort: " + posx + ", " +posy);
+		console.log("Aktueller Standort: " + posx + ", " +posy);
 		var markerArray = [];
 
 		// Instantiate a directions service.
@@ -360,7 +360,7 @@ function successCallbackMap(position) {
 		// Create a map and center it on Manhattan.
 		var map = new google.maps.Map(document.getElementById('googlemap'), {
 			zoom: 13,
-			center: {lat: position.coords.latitude, lng: position.coords.longitude}
+			center: {lat: posx, lng: posy}
 		});
 
 		// Create a renderer for directions and bind it to the map.

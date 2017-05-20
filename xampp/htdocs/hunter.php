@@ -1,5 +1,5 @@
 <?php
-
+/*
   $servername = "localhost";
   $username = "user1";
   $password = "Test123";
@@ -27,6 +27,7 @@
     fwrite($fp, json_encode($emparray));
     fclose($fp);
   }
+  */
 ?>
 
  <!DOCTYPE html>
@@ -43,7 +44,7 @@
     <script src="/hunter.js"></script>
    </head>
 
-   <body background="town.jpg" onload="loadData();initMap();setModeMap();initCompass();">
+   <body background="town.jpg" onload="loadData();getNextPoint();initMap();initCompass();">
 
      <div><h1 align="center" id="myHeader"></h1>
 
@@ -75,7 +76,7 @@
 </body>
 
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZx_ECIITPEmiXQa_JtMCfagSyyYRE7XA">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnZvLQzskFbI58r6nvWDZZPbv8QuEuqlo">
 </script>
 
 </html>
