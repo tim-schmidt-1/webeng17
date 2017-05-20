@@ -61,3 +61,28 @@
 21:40:43  [main] 	Deinitialisiere Module
 21:40:43  [main] 	Deinitialisiere Control Panel
 
+21:40:45  [main] 	Initialisere Control Panel
+21:40:45  [main] 	Windows Version: Windows 7 Professional SP1 64-bit
+21:40:45  [main] 	XAMPP Version: 5.6.30
+21:40:45  [main] 	Control Panel Version: 3.2.2  [ Compiled: Nov 12th 2015 ]
+21:40:45  [main] 	Mit Administratorrechten gestartet - gut!
+21:40:45  [main] 	XAMPP Installationsverzeichnis: "c:\users\ibm_admin\desktop\dh\4. semester\webengineering\gitcode\webeng17\xampp\"
+21:40:45  [main] 	ACHTUNG: Der XAMPP Installationspfad enthält Leerzeichen. Dies könnte die Funktionalität von Programmen/Scripten beeinflussen
+21:40:45  [main] 	Voraussetzungen werden geprüft
+21:40:45  [main] 	Alle Voraussetzungen sind erfüllt
+21:40:45  [main] 	Initialisiere Module
+21:40:45  [Apache] 	XAMPP Apache ist bereits gestartet auf Port 80
+21:40:45  [Apache] 	XAMPP Apache ist bereits gestartet auf Port 443
+21:40:45  [mysql] 	Problem festgestellt!
+21:40:45  [mysql] 	Port 3306 in Benutzung von ""C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqld.exe" --defaults-file="C:\ProgramData\MySQL\MySQL Server 5.7\my.ini" MySQL57"!
+21:40:45  [mysql] 	MySQL wird NICHT starten, wenn die konfigurierten Ports nicht frei sind!
+21:40:45  [mysql] 	Die blockierende Anwendung muss deinstalliert/deaktiviert/rekonfiguriert werden oder
+21:40:45  [mysql] 	MySQL und das Control Panel müssen auf einen anderen Port zu lauschen
+21:40:45  [main] 	Starte Check-Timer
+21:40:45  [main] 	Control Panel bereit
+08:00:47  [Apache] 	stoppe Modul Apache (PID: 11824)
+08:00:47  [Apache] 	stoppe Modul Apache (PID: 12012)
+08:00:48  [Apache] 	Statusänderung erkannt: gestoppt
+08:01:01  [main] 	Deinitialisiere Module
+08:01:01  [main] 	Deinitialisiere Control Panel
+
