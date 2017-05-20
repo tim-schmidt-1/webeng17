@@ -45,7 +45,8 @@ function getNextPoint(){
 	}
 	console.log("Neues Ziel geladen: " + currentx + ", " + currenty);
 
-  ziel = {lat: currentx, lng: currenty};
+//  ziel = {lat: currentx, lng: currenty};
+	ziel = new google.maps.LatLng(currentx, currenty);
 	return true;
   /**
   if (x && y && c){
@@ -347,6 +348,34 @@ function errorCallbackMap() {
 }
 
 function successCallbackMap(position) {
+	posx=position.coords.latitude;
+	posy=position.coords.longitude;
+
+         var directionsService = new google.maps.DirectionsService();
+         var directionsDisplay = new google.maps.DirectionsRenderer();
+
+         var map = new google.maps.Map(document.getElementById('googlemap'), {
+           zoom:10,
+           mapTypeId: google.maps.MapTypeId.SATELLITE
+         });
+
+         directionsDisplay.setMap(map);
+         directionsDisplay.setPanel(document.getElementById('googlemap'));
+				 var origincoords = new google.maps.LatLng(posx, posy);
+
+         var request = {
+           origin: origincoords,
+           destination: ziel,
+           travelMode: google.maps.DirectionsTravelMode.WALKING
+         };
+
+         directionsService.route(request, function(response, status) {
+           if (status == google.maps.DirectionsStatus.OK) {
+             directionsDisplay.setDirections(response);
+           }
+         });
+
+	/*
 		console.log("sucesscallback for map was called");
 		posx=position.coords.latitude;
 		posy=position.coords.longitude;
@@ -375,6 +404,7 @@ function successCallbackMap(position) {
 		var onChangeHandler = function() {
 			calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map);
 		};
+*/
 }
 
 function calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map) {

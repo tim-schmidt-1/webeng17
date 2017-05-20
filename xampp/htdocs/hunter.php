@@ -1,5 +1,4 @@
 <?php
-/*
   $servername = "localhost";
   $username = "user1";
   $password = "Test123";
@@ -27,7 +26,6 @@
     fwrite($fp, json_encode($emparray));
     fclose($fp);
   }
-  */
 ?>
 
  <!DOCTYPE html>
@@ -46,19 +44,16 @@
 
    <body background="town.jpg" onload="loadData();getNextPoint();initMap();initCompass();">
 
-     <div><h1 align="center" id="myHeader"></h1>
-
-
+     <div><h1 align="center" id="myHeader">Hunting</h1>
        <script>
        window.document.title = window.name;
        myHeader.innerText = window.name;
        </script>
-
      </div>
-<center>
-  <canvas class="navigation" id="navigation" width="200" height="200"></canvas>
-  <div class="navigation" id="googlemap" width="200" height="200"></div>
-</center>
+
+  <canvas class="navigation" id="navigation" width="0" height="0" style="visiblility:hidden"></canvas>
+<!--  <div class="navigation" id="googlemap" width="200" height="200"></div> -->
+  <div class="navigation" id="googlemap"></div>
 
 <!--
 <p id="info">--</p>
