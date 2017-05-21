@@ -9,8 +9,8 @@ var img = null,
 	oz=0,//entfernung z von 0 grad
 	posx=0.0, //Eigene Position latitude
 	posy=0.0,  //Eigene Position longitude
-	zielx=0, //Ziel Position latitude
-	ziely=0,  //Ziel Position longitude
+	zielx, //Ziel Position latitude
+	ziely,  //Ziel Position longitude
 	entf=0, //Entfernung zum Ziel
 	richtung = 1,
 	deviceorientation=0,
@@ -35,18 +35,18 @@ function endgame(){
 function getNextPoint(){
 	//change the new ziel to the next point in db
 	// ziel = {lat: NEWVALUE, lng: NEWVALUE}
-  var currentx = xdb.pop();
-  var currenty = ydb.pop();
+  zielx = xdb.pop();
+  ziely = ydb.pop();
   currentcomment = cdb.pop();
 
-	if (currentx==null){
+	if (zielx==null){
 		endgame();
 		return false;
 	}
-	console.log("Neues Ziel geladen: " + currentx + ", " + currenty);
+	console.log("Neues Ziel geladen: " + zielx + ", " + ziely);
 
 //  ziel = {lat: currentx, lng: currenty};
-	ziel = new google.maps.LatLng(currentx, currenty);
+	ziel = new google.maps.LatLng(zielx, ziely);
 	return true;
   /**
   if (x && y && c){
@@ -63,7 +63,7 @@ function getNextPoint(){
 
 function loadData(){
 
-	var datapoints = JSON.parse('[{"Hinweis":"h1","Breitengrad":"49.414878599999994","Laengengrad":"8.6724602"},{"Hinweis":"h2","Breitengrad":"49.4147299","Laengengrad":"8.672346"}]');
+	var datapoints = JSON.parse('[{"Hinweis":"h1","Breitengrad":"49.414878599999994","Laengengrad":"8.6724602"},{"Hinweis":"h2","Breitengrad":"49.1147299","Laengengrad":"8.172346"}]');
 
 	for (i in datapoints) {
   	xdb.unshift(parseFloat(datapoints[i].Breitengrad));
@@ -109,16 +109,11 @@ function setTitle(){
 
 
 function initCompass() {
-	zielx=ziel.lat; //Ziel Position latitude
-	ziely=ziel.lng;  //Ziel Position longitude
 
   activateOrientationListener();
 
 	// Grab the navigation element
 	var canvas = document.getElementById('navigation');
-	info = document.getElementById('info');
-
-
 	// Canvas supported?
 	if (canvas.getContext('2d')) {
 		ctx = canvas.getContext('2d');
@@ -142,11 +137,11 @@ function setModeCompass(){
 		console.log("setmodecompass");
 		if(getNextPoint()){
 		document.getElementById('navigation').style.visibility='visible';
-		document.getElementById('navigation').style.height='50%';
-		document.getElementById('navigation').style.width='50%';
+		document.getElementById('navigation').style.height='400px';
+		document.getElementById('navigation').style.width='400px';
 		document.getElementById('googlemap').style.visibility='hidden';
-		document.getElementById('googlemap').style.height='0';
-		document.getElementById('googlemap').style.width='0';
+		document.getElementById('googlemap').style.height='0px';
+		document.getElementById('googlemap').style.width='0px';
 	}
 }
 
@@ -158,21 +153,17 @@ function clearCanvas() {
 function updateCompass() {
   //auf 3 nachkommastellen muss es passen der rest ist egal
 
-		console.log(ziel.lat + " - " + posx + " , " + ziel.lng + " - " + posy);
-		console.log("div: " + Math.abs(ziel.lat-posx) + ", "+ Math.abs(ziel.lng-posy));
+		console.log(zielx + " - " + posx + " , " + ziely + " - " + posy);
+		console.log("div: " + Math.abs(zielx-posx) + ", "+ Math.abs(ziely-posy));
 
-  if (Math.abs(ziel.lat-posx)<0.001 && Math.abs(ziel.lng-posy)<0.001){
-
+  if (Math.abs(zielx-posx)<0.001 && Math.abs(ziely-posy)<0.001){
     console.log("Ziel Kompass erreicht");
     switchmode();
   }
 
-	//document.getElementById("info").innerHTML = "Aktuelle Position:" + posx + " - " + posy;
 
 
-
-
-  if (Math.abs(s-(z%360))>3){
+  while (Math.abs(s-(z%360))>3) {
 
 				if(s>180) os=360-s;
 				else os=s;
@@ -188,9 +179,10 @@ function updateCompass() {
 					else richtung=-1;
 				}
 
+
 			// nadel um 5 Grad in richtige richtung
 			s = (s+richtung*5)%360;
-		  if(s<=0) s = 360-s;
+		  if(s<0) s = 360-s;
 
 	clearCanvas();
 
@@ -309,7 +301,11 @@ function activateOrientationListener(){
 
 							console.log('The goal of the compass needle is ' + zielwinkel);
 							z=zielwinkel;
-							updateCompass();
+							if (z==-1){
+								endgame();
+							} else {
+								updateCompass();
+							}
 						}
           }, false);
 
@@ -360,7 +356,7 @@ function successCallbackMap(position) {
          });
 
          directionsDisplay.setMap(map);
-         directionsDisplay.setPanel(document.getElementById('googlemap'));
+         directionsDisplay.setPanel(document.getElementById('panel'));
 				 var origincoords = new google.maps.LatLng(posx, posy);
 
          var request = {
@@ -374,8 +370,7 @@ function successCallbackMap(position) {
              directionsDisplay.setDirections(response);
            }
          });
-
-	/*
+/*
 		console.log("sucesscallback for map was called");
 		posx=position.coords.latitude;
 		posy=position.coords.longitude;
@@ -406,27 +401,22 @@ function successCallbackMap(position) {
 		};
 */
 }
+/*
 
-function calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map) {
-	// First, remove any existing markers from the map.
 
-	for (var i = 0; i < markerArray.length; i++) {
-		markerArray[i].setMap(null);
-	}
-
-	// Retrieve the start and end locations and create a DirectionsRequest using
-	// WALKING directions.
-	directionsService.route({
-		origin: {lat: posx, lng: posy},
-		destination: ziel,
-		travelMode: 'WALKING'
-	}, function(response, status) {
-		// Route the directions and pass the response to a function to create
-		// markers for each step.
-	if (status === 'OK') {
-		directionsDisplay.setDirections(response);
-	} else {
-		console.log('Directions request failed due to ' + status);
-	}
-	});
+function calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB) {
+    directionsService.route({
+        origin: pointA,
+        destination: pointB,
+        avoidTolls: true,
+        avoidHighways: false,
+        travelMode: google.maps.TravelMode.DRIVING
+    }, function (response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+        } else {
+            window.alert('Directions request failed due to ' + status);
+        }
+    });
 }
+*/

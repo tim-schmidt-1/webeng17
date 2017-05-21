@@ -1,4 +1,5 @@
 <?php
+
   $servername = "localhost";
   $username = "user1";
   $password = "Test123";
@@ -26,6 +27,7 @@
     fwrite($fp, json_encode($emparray));
     fclose($fp);
   }
+
 ?>
 
  <!DOCTYPE html>
@@ -51,10 +53,14 @@
        </script>
      </div>
 
-  <canvas class="navigation" id="navigation" width="0" height="0" style="visiblility:hidden"></canvas>
+  <canvas class="navigation" id="navigation" style="width:0px; height:0px; visiblility:hidden"></canvas>
 <!--  <div class="navigation" id="googlemap" width="200" height="200"></div> -->
-  <div class="navigation" id="googlemap"></div>
-
+<!--  <div class="navigation" id="googlemap"></div> -->
+<center>
+           <div id="googlemap" style="width: 400px; height: 400px;visiblility:visible"></div>
+           <canvas id="navigation" style="width:0px; height:0px; visiblility:hidden"></canvas>
+    <!--       <div id="panel" style="width: 0; visiblility:hidden;"></div> -->
+</center>
 <!--
 <p id="info">--</p>
 <p><a onclick="setModeMap()" href="#">Map</a></p>

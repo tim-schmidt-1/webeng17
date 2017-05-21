@@ -151,7 +151,7 @@
       	y.innerHTML = position.coords.longitude; //Länge
       	z.innerHTML = position.coords.latitude; //Breite
 
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=17&size=400x300&sensor=false&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=17&size=400x300&sensor=false&key=AIzaSyAnZvLQzskFbI58r6nvWDZZPbv8QuEuqlo";
     document.getElementById("mapholder").innerHTML = "<img alt='Karte' src='"+img_url+"'/>";
       }
       //To use this code on your website, get a free API key from Google.
